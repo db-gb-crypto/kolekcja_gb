@@ -120,7 +120,8 @@ function sprawdzTx(){
 				Metoda inspekcji: ${escapeHTML(safe(found.metoda_inspekcji))}<br>
 				Nazwa oryginalnego obrazu: ${escapeHTML(safe(found.sciezka_obrazu))}<br>
 				Hash obrazu: ${escapeHTML(safe(found.hash_obrazu))}<br>
-				Data: ${escapeHTML(safe(found.data_wpisu))}
+				Data wpisu do lokalnej bazy: ${escapeHTML(safe(found.data_wpisu))}<br>
+				Data utworzenia wpisu do blockchain: ${escapeHTML(safe(found.data_txid))}
 			`;
 			document.getElementById("resetBtn").style.display = "inline-block";
         })
