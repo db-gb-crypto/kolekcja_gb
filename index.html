@@ -606,6 +606,7 @@ button:active {
             LICZNIK (chyba zepsuty):<br>
             <span class="counter">0001337+</span>
         </div>
+		<div class="box"><img src="https://github.com/db-gb-crypto/kolekcja_gb/blob/main/18.gif" width="50%"><img src="https://github.com/db-gb-crypto/kolekcja_gb/blob/main/9.gif" width="50%"></div>
 		<div class="box">
 			<b>📜 LOG SYSTEMU (LIVE)</b><br><br>
 
@@ -617,14 +618,14 @@ button:active {
     <!-- CENTER -->
     <div class="container">
 
-        <h1>🎮 GB VIEWER</h1>
+        <h1><img src="https://github.com/db-gb-crypto/kolekcja_gb/blob/main/gb1.gif" width="5%"> GBR VIEWER v.1.0</h1>
 
         <input type="text" id="txid" placeholder="Wklej TXID"
                onkeypress="if(event.key==='Enter') sprawdzTx()">
 
         <button onclick="sprawdzTx()">SZUKAJ</button>
 
-        <div class="ad">💾 POBIERZ ROM PACK (MOŻE NIE DZIAŁAĆ)</div>
+        <div class="ad"><img src="https://github.com/db-gb-crypto/kolekcja_gb/blob/main/d1.gif" width="10%"> POBIERZ ROM PACK (MOŻE NIE DZIAŁAĆ)</div>
 
         <div id="output" class="output">▌</div>
 		
@@ -633,8 +634,9 @@ button:active {
 		</button>
         <br>
 
+        <!-- fake 90s table clutter -->
         <table class="table">
-            <tr><td>STATUS</td><td>ONLINE</td></tr>
+            <tr><td>STATUS</td><td><img src="https://github.com/db-gb-crypto/kolekcja_gb/blob/main/on1.gif" width="13%"></td></tr>
             <tr><td>SERWER</td><td>BLOCKCHAIN SV NODE</td></tr>
             <tr><td>FUNKCJA</td><td>ARCHIWUM</td></tr>
 			<tr><td>WŁAŚCICIEL KOLEKCJI</td><td>12f41kspxCovDd7UqKoxaSwgZ78R9iqdPF</td></tr>
@@ -646,17 +648,22 @@ button:active {
     <div class="sidebar">
 
         <div class="box">
-            LINKI<br>
+            <img src="https://github.com/db-gb-crypto/kolekcja_gb/blob/main/l1.gif" width="30%"><br>
             ▸ Nintendo<br>
             ▸ ROM Strony<br>
             ▸ Cheat'y Kody
         </div>
 
-        <div class="ad">🚧 SEKCJA W BUDOWIE 🚧</div>
+        <div class="ad"><img src="https://github.com/db-gb-crypto/kolekcja_gb/blob/main/6.gif" width="100%"></div>
 
         <div class="box">
-            SYSTEM INFO:<br>
-            GBR ARCHIWUM NODE SV
+            WAŻNE:<br>
+            Lista wszystkich gier znajduje się w blockchain.<br> 
+			Jeśli chcesz sprawdzić grę. <br>Wejdź <a href="https://whatsonchain.com/address/12f41kspxCovDd7UqKoxaSwgZ78R9iqdPF"
+               target="_blank"
+               class="bsvlink">
+                ▶ TUTAJ. 
+            </a><br>Wybierz numer transakcji (Transaction id - ten baaaardzo długi ciąg literek i cyferek), skopiuj do wyszukiwarki i naciśnij SZUKAJ.
         </div>
 		<div class="box float">
 			<b>🖥️ PANEL SYSTEMOWY</b><br><br>
@@ -750,6 +757,7 @@ button:active {
 <script>
 
 
+
 function safe(v){return v??"-";}
 
 function escapeHTML(str){
@@ -803,7 +811,6 @@ function extractGameData(parts){
     return null;
 }
 
-/* ===== MAIN ===== */
 
 function sprawdzTx(){
 	document.getElementById("gifStatus").src = "https://i.gifer.com/4SHX.gif";
@@ -812,7 +819,7 @@ function sprawdzTx(){
     const out=document.getElementById("output");
 
     if(!/^[0-9a-fA-F]{64}$/.test(txid)){
-        out.innerHTML="❌ INVALID TXID";
+        out.innerHTML="❌ BŁĘDNY NUMER TXID";
         return;
     }
 
@@ -826,9 +833,8 @@ function sprawdzTx(){
 
             for(let v of d.vout){
 
-
+                // standard
                 let p=v.scriptPubKey?.opReturn?.parts;
-
 
                 if(!p && v.scriptPubKey?.asm){
                     p=v.scriptPubKey.asm.split(" ");
@@ -840,7 +846,7 @@ function sprawdzTx(){
                 if(found) break;
             }
 
-            if(!found) throw new Error("NO GAME DATA");
+            if(!found) throw new Error("❌ BRAK DANYCH - SPRÓBUJ INNEGO TXID 😄");
 				document.getElementById("gifStatus").src = "https://i.gifer.com/7efs.gif";
 				document.getElementById("gifLabel").innerHTML = "✔ DANE ODNALEZIONE — ARCHIWUM AKTYWNE";
 
@@ -871,6 +877,8 @@ function sprawdzTx(){
 				Data RAW: ${escapeHTML(safe(found.pcb?.mbc?.mbc_data_serial))}<br><br>
 
 				Metoda inspekcji: ${escapeHTML(safe(found.metoda_inspekcji))}<br>
+				Nazwa oryginalnego obrazu: ${escapeHTML(safe(found.sciezka_obrazu))}<br>
+				Hash obrazu: ${escapeHTML(safe(found.hash_obrazu))}<br>
 				Data: ${escapeHTML(safe(found.data_wpisu))}
 			`;
 			document.getElementById("resetBtn").style.display = "inline-block";
@@ -921,9 +929,7 @@ function addLogLine(){
 
     typeWriter(line, `▸ ${entry.t}: ${entry.msg}`);
 
-
     log.scrollTop = log.scrollHeight;
-
 
     if(Math.random() < 0.15){
         setTimeout(() => {
@@ -951,5 +957,4 @@ startLiveLog();
 </script>
 
 </body>
-
 </html>
