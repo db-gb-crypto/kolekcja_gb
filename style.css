@@ -14,6 +14,17 @@ body {
     animation: flicker 0.12s infinite;
 }
 
+.txid {
+    color: lime !important;
+    cursor: pointer !important;
+    text-decoration: underline;
+    font-family: monospace;
+}
+
+.txid:hover {
+    color: yellow !important;
+    cursor: pointer !important;
+}
 
 body::before {
     content: "";

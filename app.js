@@ -25,7 +25,20 @@ function hexToUtf8(hex){
     }
 }
 
+function copyTX(el) {
+    const full = el.getAttribute("data-full");
 
+    navigator.clipboard.writeText(full);
+
+    const old = el.innerText;
+    el.innerText = "SKOPIOWANO!";
+    el.style.color = "yellow";
+
+    setTimeout(() => {
+        el.innerText = old;
+        el.style.color = "lime";
+    }, 1500);
+}
 
 function extractGameData(parts){
 

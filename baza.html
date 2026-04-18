@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GBR Blockchain Viewer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="marquee">
+    <marquee>🔥 WITAM W DOŚWIADCZANIU INTERNETU LAT 90 • ARCHIWUM BLOCKCHAIN GBR • NAJLEPIEJ WYGLĄDA W ROZDZIELCZOŚCI 800x600 • STRONA W ROZ-BUDOWIE 🔥</marquee>
+</div>
+
+<div class="retro-layout">
+
+    <div class="big-banner">
+        🌐 GBR ARCHIWUM BLOCKCHAIN ^^ 1999 STYLE 🌐
+    </div>
+    <!-- LEFT -->
+    <div class="sidebar">
+
+        <div class="box" style="position: relative;">
+		<img src="stars.gif" class="gifzed" style="width:80px;">
+			<b>MENU</b><img src="stars.gif" class="gifzed" style="width:80px;"><br><br>
+			<a class="bsvlink" href="index.html">▸ 🏠 STRONA GŁÓWNA</a><br>
+			<a class="bsvlink" href="baza.html">▸ 📀 BAZA GIEREK</a><br>
+			▸ 🔧 SKANY PŁYTEK PCB<br>
+			▸ 🧾 DZIENNIK KART<br>
+			▸ 🎮 STREFA EMULACJI<br>
+			▸ 🌐 WYMIANA LINKÓW<br>
+			▸ 💾 MAGAZYN ZAPISÓW<br>
+		</div>
+
+        <div class="ad">🔥 HOT: FREE GAME BOY EMULATOR 2000 🔥</div>
+
+        <div class="box">
+            <img src="counter.gif" width="100%">
+        </div><br>
+		<div class="box" style=" box-shadow: 0 0 10px lime, 0 0 20px lime, 0 0 30px lime;">
+			<img src="https://raw.githubusercontent.com/db-gb-crypto/kolekcja_gb/refs/heads/main/18.gif" width="50%">
+			<img src="https://raw.githubusercontent.com/db-gb-crypto/kolekcja_gb/refs/heads/main/9.gif" width="40%">
+		</div><br>
+		<div class="box">
+			<b>📜 LOG SYSTEMU (LIVE)</b><br><br>
+
+			<div id="logWindow"></div>
+		</div>
+
+    </div>
+
+    <!-- CENTER -->
+    <div class="container">
+
+
+
+
+
+        <div id="output" class="output">
+			<section class="box gb-info">
+				<b>📀 BAZA GIEREK GAME BOY (ARCHIWUM)</b>
+				<br><br>
+
+				<pre style="color:lime;">
+				==========================================
+				   SYSTEM: GAME BOY / GB CLASSIC
+				   TRYB: ARCHIWUM KOLEKCJI
+				   OSTATNIA AKTUALIZACJA: 2026-04-18
+				==========================================
+				</pre>
+
+				<table class="table">
+				<tr>
+					<td>#ID</td>
+					<td>TYTUŁ</td>
+					<td>REGION</td>
+					<td>TXID</td>
+				</tr>
+
+				<tr>
+					<td>GBR-0001</td>
+					<td>Tiny Toon Adventures: Babs' Big Break</td>
+					<td>EUROPA</td>
+					<td>
+						<span class="txid" 
+						onclick="copyTX(this)" 
+						data-full="ba4476fda44823eabb960f9f1a0efbec56eea7c477d9deea20a468d4cb91bc5a">
+						ba4476fda..
+						</span>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>GBR-0002</td>
+					<td>Mario & Yoshi</td>
+					<td>EUROPA</td>
+					<td>
+						<span class="txid" 
+						onclick="copyTX(this)" 
+						data-full="39d2cf7cf34788d51e54b1fcfad27148d19a158e0f52c210cc1b0755b19a5e0c">
+						39d2cf7cf..
+						</span>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>GBR-0003</td>
+					<td>The Bugs Bunny Crazy Castle</td>
+					<td>EUROPA</td>
+					<td>
+						<span class="txid" 
+						onclick="copyTX(this)" 
+						data-full="0a65e1bad8b07479019e5fc36db95b9c25228eea266d9963d14727196f3be635">
+						0a65e1bad..
+						</span>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>GBR-0004</td>
+					<td>Tennis</td>
+					<td>EUROPA</td>
+					<td>
+						<span class="txid" 
+						onclick="copyTX(this)" 
+						data-full="1a53c5b5457dcbed91729f4894dff6840c0bc220bc84484d3aa8172d1d72d3b2">
+						1a53c5b54..
+						</span>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>GBR-0005</td>
+					<td>Olympic Summer Games</td>
+					<td>EUROPA</td>
+					<td>
+						<span class="txid" 
+						onclick="copyTX(this)" 
+						data-full="9ac6ba14505225ed5b44ea225c936c84f0962593b27e8f09621f32e892723179">
+						9ac6ba145..
+						</span>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>GBR-0006</td>
+					<td>Burai Fighter Deluxe</td>
+					<td>EUROPA</td>
+					<td>
+						<span class="txid" 
+						onclick="copyTX(this)" 
+						data-full="dd5fbe0830a0d8a6f032c38e62ccc9ad1d08cff5a46d45d5754c78bd95004c06">
+						dd5fbe083..
+						</span>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>GBR-0007</td>
+					<td>F1 Race</td>
+					<td>EUROPA</td>
+					<td>
+						<span class="txid" 
+						onclick="copyTX(this)" 
+						data-full="3dfd57decb260eec290efa051729e9e404aa06dbb8444524db6ef5555eff229e">
+						3dfd57dec..
+						</span>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>GBR-0008</td>
+					<td>Game Boy Gallery 5in1</td>
+					<td>EUROPA</td>
+					<td>
+						<span class="txid" 
+						onclick="copyTX(this)" 
+						data-full="186f8606c0da408aea4df5af8de3e19dd5f74af2b16058ac185f6b581d15d73e">
+						186f8606c..
+						</span>
+					</td>
+				</tr>
+
+
+				</table>
+
+				<br>
+
+				<pre style="color:cyan;">
+				> KLIKNIJ TXID ABY SKOPIOWAĆ
+				> DANE POCHODZĄ Z BLOCKCHAIN BSV
+				</pre>
+
+				<marquee scrollamount="3">
+				🕹️ SYSTEM GOTOWY DO ODCZYTU TRANSAKCJI 🕹️
+				</marquee>
+
+
+
+			</section>
+		</div>
+		
+		<button id="resetBtn" onclick="resetView()" style="display:none;">
+			⏪ RESETUJ WYSZUKIWANIE
+		</button>
+        <br>
+
+        <!-- fake 90s table clutter -->
+        <table class="table">
+			<img src="link.gif" style="width:100%;">
+            <tr><td>STATUS</td><td><img src="https://raw.githubusercontent.com/db-gb-crypto/kolekcja_gb/refs/heads/main/on1.gif" width="13%"></td></tr>
+            <tr><td>SERWER</td><td>BLOCKCHAIN SV NODE</td></tr>
+            <tr><td>FUNKCJA</td><td>ARCHIWUM</td></tr>
+			<tr><td>WŁAŚCICIEL KOLEKCJI</td><td>12f41kspxCovDd7UqKoxaSwgZ78R9iqdPF</td></tr>
+        </table>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="sidebar">
+
+        <div class="box">
+            <img src="https://raw.githubusercontent.com/db-gb-crypto/kolekcja_gb/refs/heads/main/l1.gif" width="30%"><br>
+            <a class="bsvlink" href="nintendo.html">▸ Nintendo</a><br>
+            ▸ ROM Strony<br>
+            <a class="bsvlink" href="hack.html">▸ Cheat'y Kody</a>
+        </div>
+
+        <div class="ad"><img src="https://raw.githubusercontent.com/db-gb-crypto/kolekcja_gb/refs/heads/main/6.gif" width="100%"></div>
+
+        <div class="box" style="position: relative;">
+			<img src="spar.gif" style="position: absolute; top: -10px; left: -30px; width: 50px; pointer-events: none;">
+            <img src="exclam.gif" class="gifzed" style="width:30px;">
+				WAŻNE 
+			<img src="exclam.gif" class="gifzed" style="width:30px;">
+			<img src="spar.gif" style="position: absolute; top: -10px; right: -30px; width: 50px; pointer-events: none;"><br>
+			
+            Lista wszystkich gier znajduje się w blockchain.<br> 
+			Jeśli chcesz sprawdzić grę. <br>Wejdź <a href="https://whatsonchain.com/address/12f41kspxCovDd7UqKoxaSwgZ78R9iqdPF"
+               target="_blank"
+               class="bsvlink">
+                <img src="arr.gif" class="gifzed" style="width:15px;"> TUTAJ. 
+            </a><br>Wybierz numer transakcji (Transaction id - ten baaaardzo długi ciąg literek i cyferek), skopiuj do wyszukiwarki i naciśnij SZUKAJ.
+        </div>
+		<div class="box float" style="position: relative;">
+		
+		<img src="spi.gif" style="position: absolute; top: -10px; right: -20px; width: 50px; pointer-events: none;">
+			 
+			<b>🖥️ PANEL SYSTEMOWY</b><br><br>
+
+			▸ STATUS: <span style="color:lime;">ONLINE</span><br>
+			▸ SYGNAŁ: <span class="blink">STABILNY</span><br>
+			▸ SZYBKOŚĆ: <span style="color:cyan;">56K MODEM</span><br>
+			▸ OPÓŹNIENIE: <span style="color:yellow;">NISKIE</span><br><br>
+
+			▸ BLOKCHAIN NODE: <span class="blink">AKTYWNY</span><br>
+			▸ OCHRONA SYSTEMU: <span style="color:magenta;">FIREWALL 1.0</span><br>
+		</div>
+		<div class="box">
+			<b>🌀 STATUS WYSZUKIWANIA</b><br><br>
+
+			<img id="gifStatus" src="https://i.gifer.com/7VE.gif" width="100%"><br><br>
+
+			<div id="gifLabel" style="color:cyan;">
+				OCZEKIWANIE NA DANE...
+			</div>
+		</div>
+
+    </div>
+
+<div class="footer retro-footer">
+
+    <div class="footer-grid">
+
+        <!-- LEWA STRONA -->
+        <div class="footer-left">
+
+			<b><img src="house3.gif" width="20%"> O TEJ STRONIE / ARCHIWUM GB</b><br><br>
+
+			Ta strona, to archiwum mojej kolekcji gier Game Boy. Coś pomiedzy bazą danych, muzeum nostalgii i prywatnym sanktuarium pikseli, gdzie każdy kartridż ma swoje miejsce i historię, nawet jeśli na pierwszy rzut oka wygląda jak zwykły kawałek szarego plastiku.<br><br>
+
+			▸ obudowa kartridża (co przeżyła dzieciństwo poprzedniego właściciela)<br>
+			▸ PCB (elektronika ukryta w środku)<br>
+			▸ ROM (co siedzi w środku, a nie tylko co jest na etykiecie)<br>
+			▸ MBC (pamięć)<br>
+			▸ data wpisu (najczęściej moment, w którym gra w końcu trafia w moje ręce)<br><br>
+
+			Zdjęcia trzymam lokalnie na komputerze, bo jakoś bardziej pasuje mi świadomość, że to wszystko istnieje u mnie, a nie gdzieś w chmurze razem z milionem innych rzeczy.<br>
+			Każda gra zanim trafi do archiwum przechodzi swój mały rytuał: czyszczenie, oględziny, szybka sesja zdjęciowa i test, czy dalej żyje i daje radość tak jak powinna.<br><br>
+
+			Nie ma tu miejsca na losowe trupy ani "może zadziała jak się dmuchnie" - każdy egzemplarz działa.<br>
+			Wszystkie gry mają swoje pudełka i stoją w retro kąciku.<br><br>
+
+			Zawsze chciałem mieć Game Boya.. ale wtedy to był sprzęt kosztujący jakieś absurdalne pieniądze - około 250 zł, dla mnie nieosiągalna.<br>
+			Nie miałem "serca", żeby prosić rodziców o taką grę, bo wiedziałem, że to nie jest zwykła zachcianka.<br>
+			Zostawało mi tylko jedno: stanie i patrzenie przez szybę w sklepie z zabawkami, gdzie między misiami, wózkami, lalkami i samochodzikami, leżał on - absolutnie idealny.<br><br>
+
+			Dzisiaj ta historia zatoczyła ładne koło, bo zamiast jednego mam ich cztery i każdy z nich ma swój klimat:<br>
+			▸ klasyczny "Szarak", czyli ten duży, ciężki<br>
+			▸ Pocket - mniejszy, bardziej cywilizowany<br>
+			▸ Pocket Light - z podświetleniem<br>
+			▸ Color - czyli moment, w którym świat nagle dostał kolory<br><br>
+
+			Gry zbieram powoli, z sentymentu i bez pośpiechu, bo dla mnie to nie jest wyścig ani projekt na pokaz.<br>
+			Nie robię zakupów za 30 tysięcy na start i nie zamawiam hurtowo paczek tylko po to, żeby potem nagrywać epickie unboxingi.<br>
+			Każda gra wpada tu w swoim czasie i zostaje na stałe, oby jak najdłużej :D<br><br>
+
+			Proces dodania wygląda zawsze tak samo:<br>
+			zastanawiam się czy kupić -> kupuję -> odbieram -> zdjęcia -> czyszczę -> opis -> data -> wpis do bazy -> wpis do blockchain<br><br>
+
+			<span class="retro-sign">
+				ARCHIWUM = STAŁOŚĆ + PAMIĘĆ + SPRZĘT
+			</span>
+
+		</div>
+
+        <!-- PRAWA STRONA -->
+        <div class="footer-right">
+			<img src="info.gif" width="10%">
+            <b> WŁAŚCICIEL / WERYFIKACJA BSV 🔐</b><br><br>
+
+            Adres właściciela:<br>
+            <span class="addr">12f41kspxCovDd7UqKoxaSwgZ78R9iqdPF</span><br><br>
+
+            Blockchain: Bitcoin Satoshi Vision (BSV)<br><br>
+
+            <a href="https://whatsonchain.com/address/12f41kspxCovDd7UqKoxaSwgZ78R9iqdPF"
+               target="_blank"
+               class="bsvlink">
+                ▶ sprawdź w explorerze
+            </a><br><br>
+
+            Dane mogą być weryfikowane w łańcuchu BSV jako niezmienny zapis.<br><br>
+			Jeśli ktoś wykorzystuje tę stronę i jej zawartość, a Ty nie jesteś pewien czy należy do niego, poproś o weryfikację: wysłanie 1 sat, 
+			jakiś wpis lub może wybicie nowego NFT z wykorzystaniem adresu 12f41kspxCovDd7UqKoxaSwgZ78R9iqdPF; jeśli inny adres wyśle Ci takie potwierdzenie, możesz być pewny, że 
+			to co posiada, napewno nie pochodzi z TEJ STRONY.<br><br>
+
+            © 1999–∞ GBR ARCHIWUM BLOCKCHAIN
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
