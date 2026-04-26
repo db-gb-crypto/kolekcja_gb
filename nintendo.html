@@ -159,56 +159,7 @@
     </div>
 
     <!-- RIGHT -->
-    <div class="sidebar">
-
-        <div class="box">
-            <img src="assets/l1.gif" width="30%"><br>
-            <a class="bsvlink" href="nintendo.html">▸ Nintendo</a><br>
-            ▸ ROM Strony<br>
-            <a class="bsvlink" href="hack.html">▸ Cheat'y Kody</a>
-        </div>
-
-        <div class="ad"><img src="assets/6.gif" width="100%"></div>
-
-        <div class="box" style="position: relative;">
-			<img src="assets/spar.gif" style="position: absolute; top: -10px; left: -30px; width: 50px; pointer-events: none;">
-            <img src="assets/exclam.gif" class="gifzed" style="width:30px;">
-				WAŻNE 
-			<img src="assets/exclam.gif" class="gifzed" style="width:30px;">
-			<img src="assets/spar.gif" style="position: absolute; top: -10px; right: -30px; width: 50px; pointer-events: none;"><br>
-			
-            Lista wszystkich gier znajduje się w blockchain.<br> 
-			Jeśli chcesz sprawdzić grę. <br>Wejdź <a href="https://whatsonchain.com/address/12f41kspxCovDd7UqKoxaSwgZ78R9iqdPF"
-               target="_blank"
-               class="bsvlink">
-                <img src="assets/arr.gif" class="gifzed" style="width:15px;"> TUTAJ. 
-            </a><br>Wybierz numer transakcji (Transaction id - ten baaaardzo długi ciąg literek i cyferek), skopiuj do wyszukiwarki i naciśnij SZUKAJ.
-        </div>
-		<div class="box float" style="position: relative;">
-		
-		<img src="assets/spi.gif" style="position: absolute; top: -10px; right: -20px; width: 50px; pointer-events: none;">
-			 
-			<b>🖥️ PANEL SYSTEMOWY</b><br><br>
-
-			▸ STATUS: <span style="color:lime;">ONLINE</span><br>
-			▸ SYGNAŁ: <span class="blink">STABILNY</span><br>
-			▸ SZYBKOŚĆ: <span style="color:cyan;">56K MODEM</span><br>
-			▸ OPÓŹNIENIE: <span style="color:yellow;">NISKIE</span><br><br>
-
-			▸ BLOKCHAIN NODE: <span class="blink">AKTYWNY</span><br>
-			▸ OCHRONA SYSTEMU: <span style="color:magenta;">FIREWALL 1.0</span><br>
-		</div>
-		<div class="box">
-			<b>🌀 STATUS WYSZUKIWANIA</b><br><br>
-
-			<img id="gifStatus" src="https://i.gifer.com/7VE.gif" width="100%"><br><br>
-
-			<div id="gifLabel" style="color:cyan;">
-				OCZEKIWANIE NA DANE...
-			</div>
-		</div>
-
-    </div>
+    {% include sidebar-right.html %}
 
 {% include footer.html %}
 
