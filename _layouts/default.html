@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>GBR Blockchain Viewer</title>
+	<link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+</head>
+
+<body>
+
+<div class="marquee">
+	<marquee>🔥 WITAM W DOŚWIADCZANIU INTERNETU LAT 90 • ARCHIWUM BLOCKCHAIN GBR • NAJLEPIEJ WYGLĄDA W ROZDZIELCZOŚCI 800x600 • STRONA W ROZ-BUDOWIE 🔥</marquee>
+</div>
+
+<div class="retro-layout">
+
+    <div class="big-banner">
+        🌐 GBR ARCHIWUM BLOCKCHAIN ^^ 1999 STYLE 🌐
+    </div>
+    <!-- LEFT -->
+    {% include sidebar-left.html %}
+    <!-- CENTER -->
+    <div class="container">
+
+        {{ content }}
+
+		<button id="resetBtn" onclick="resetView()" style="display:none;">
+			⏪ RESETUJ WYSZUKIWANIE
+		</button>
+        <br>
+
+        <!-- fake 90s table clutter -->
+        <table class="table">
+			<img src="{{ '/assets/link.gif' | relative_url }}" style="width:100%;">
+            <tr><td>STATUS</td><td><img src="{{ '/assets/on1.gif' | relative_url }}" width="13%"></td></tr>
+            <tr><td>SERWER</td><td>BLOCKCHAIN SV NODE</td></tr>
+            <tr><td>FUNKCJA</td><td>ARCHIWUM</td></tr>
+			<tr><td>WŁAŚCICIEL KOLEKCJI</td><td>12f41kspxCovDd7UqKoxaSwgZ78R9iqdPF</td></tr>
+        </table>
+
+    </div>
+
+    <!-- RIGHT -->
+	{% include sidebar-right.html %}
+
+{% include footer.html %}
+
+</div>
+<script src="{{ '/app.js' | relative_url }}"></script>
+</body>
+</html>

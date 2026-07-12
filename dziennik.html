@@ -1,104 +1,48 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>GBR Blockchain Viewer</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<div id="output" class="output">
+    <section class="box gb-info">
 
-<body>
+    <hr>
 
-<div class="marquee">
-    <marquee>🔥 WITAM W DOŚWIADCZANIU INTERNETU LAT 90 • ARCHIWUM BLOCKCHAIN GBR • NAJLEPIEJ WYGLĄDA W ROZDZIELCZOŚCI 800x600 • STRONA W ROZ-BUDOWIE 🔥</marquee>
-</div>
-
-<div class="retro-layout">
-
-    <div class="big-banner">
-        🌐 GBR ARCHIWUM BLOCKCHAIN ^^ 1999 STYLE 🌐
-    </div>
-    <!-- LEFT -->
-    {% include sidebar-left.html %}
-    <!-- CENTER -->
-    <div class="container">
+    <h3>Dziennik zapisów</h3>
 
 
-        <div id="output" class="output">
-			<section class="box gb-info">
-
-			<hr>
-
-			<h3>Dziennik zapisów</h3>
-
-
-            <div class="save-log"><hr>
-              <b>[2026-06-17 | 19:57]</b><br>
-			  Otrzymałem pudełko do GameBoy Pocket. Myślałem, że schowam tam mojego "light" ale.. jest o kilka mm za duży.<br>
-                W pudełku bedzie Pocket.<br>
-              Ogólnie pudełko wygląda świetnie, jest w bardzo dobrym stanie, cieszyłem się z niego bardziej jak z niejednej gry :)
-			</div>
-
-            <div class="save-log"><hr>
-              <b>[2026-06-07 | 20:05]</b><br>
-			  Wpadła mi ostatnio fajna perełka - szwedzka Bamse :)<br>
-              Wylicytowałem też na ebay'u w całkiem dobrym stanie, oryginalne akrylowe pudełko do GameBoy Pocket.<br>
-              Zostanie mi jeszcze jedna konsola bez pudełka ale myślę, że w lipcu coś tam pooglądam.<br>
-              Mam dwie opcje.. <br>
-                - albo oryginał pudełka do GameBoy Classic (wtedy szarak je dostanie) <br>
-                - albo oryginał do Pocketa (wtedy szarak zostaje w fabrycznie nowym akrylu, który już mam)<br>
-                Czas pokaże :)
-			</div>
-
-            <div class="save-log"><hr>
-              <b>[2026-04-26 | 18:45]</b><br>
-			  Tak mi się nie chciało ale:<br>
-              - wyciągnąłem sekcje MENU do osobnych plików .html<br>
-              - podpiąłem konto github do środowiska i mogę sobie "puszować" zmiany bez logowania do githuba.
-			</div>
-
-			<div class="save-log"><hr>
-              <b>[2026-04-22 | 20:09]</b><br>
-			  Dodałem 4 gry do bazki i dopieszczałem sobie skrypt dodający gry do blockchain:<br>
-			  - wybiera grę,<br>
-			  - zagląda do folderu, pobiera zdjęcie, wylicza hash,<br>
-			  - zapisuje wybór i oznacza wcześniej zapisane gry.<br>
-			  Narazie hash wpisuję ręcznie, może to zmienię, może nie. Narazie mi się nie chce. Czekam kolejnego miesiąca to ruszę na
-			  poszukiwania kolejnych gier. :)
-			</div>
-
-
-
-
-
-
-			</section>
-		</div>
-
-		<button id="resetBtn" onclick="resetView()" style="display:none;">
-			⏪ RESETUJ WYSZUKIWANIE
-		</button>
-        <br>
-
-        <!-- fake 90s table clutter -->
-        <table class="table">
-			<img src="assets/link.gif" style="width:100%;">
-            <tr><td>STATUS</td><td><img src="assets/on1.gif" width="13%"></td></tr>
-            <tr><td>SERWER</td><td>BLOCKCHAIN SV NODE</td></tr>
-            <tr><td>FUNKCJA</td><td>ARCHIWUM</td></tr>
-			<tr><td>WŁAŚCICIEL KOLEKCJI</td><td>12f41kspxCovDd7UqKoxaSwgZ78R9iqdPF</td></tr>
-        </table>
-
+    <div class="save-log"><hr>
+      <b>[2026-06-17 | 19:57]</b><br>
+      Otrzymałem pudełko do GameBoy Pocket. Myślałem, że schowam tam mojego "light" ale.. jest o kilka mm za duży.<br>
+        W pudełku bedzie Pocket.<br>
+      Ogólnie pudełko wygląda świetnie, jest w bardzo dobrym stanie, cieszyłem się z niego bardziej jak z niejednej gry :)
     </div>
 
-    <!-- RIGHT -->
-  {% include sidebar-right.html %}
+    <div class="save-log"><hr>
+      <b>[2026-06-07 | 20:05]</b><br>
+      Wpadła mi ostatnio fajna perełka - szwedzka Bamse :)<br>
+      Wylicytowałem też na ebay'u w całkiem dobrym stanie, oryginalne akrylowe pudełko do GameBoy Pocket.<br>
+      Zostanie mi jeszcze jedna konsola bez pudełka ale myślę, że w lipcu coś tam pooglądam.<br>
+      Mam dwie opcje.. <br>
+        - albo oryginał pudełka do GameBoy Classic (wtedy szarak je dostanie) <br>
+        - albo oryginał do Pocketa (wtedy szarak zostaje w fabrycznie nowym akrylu, który już mam)<br>
+        Czas pokaże :)
+    </div>
 
-{% include footer.html %}
+    <div class="save-log"><hr>
+      <b>[2026-04-26 | 18:45]</b><br>
+      Tak mi się nie chciało ale:<br>
+      - wyciągnąłem sekcje MENU do osobnych plików .html<br>
+      - podpiąłem konto github do środowiska i mogę sobie "puszować" zmiany bez logowania do githuba.
+    </div>
 
+    <div class="save-log"><hr>
+      <b>[2026-04-22 | 20:09]</b><br>
+      Dodałem 4 gry do bazki i dopieszczałem sobie skrypt dodający gry do blockchain:<br>
+      - wybiera grę,<br>
+      - zagląda do folderu, pobiera zdjęcie, wylicza hash,<br>
+      - zapisuje wybór i oznacza wcześniej zapisane gry.<br>
+      Narazie hash wpisuję ręcznie, może to zmienię, może nie. Narazie mi się nie chce. Czekam kolejnego miesiąca to ruszę na
+      poszukiwania kolejnych gier. :)
+    </div>
 
+    </section>
 </div>
-<script src="app.js"></script>
-</body>
-</html>

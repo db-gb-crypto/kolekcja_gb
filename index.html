@@ -1,68 +1,18 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>GBR Blockchain Viewer</title>
-	<link rel="stylesheet" href="style.css">
-</head>
+<h1><img src="{{ '/assets/gb1.gif' | relative_url }}" width="5%"> GBR VIEWER v.1.0</h1>
 
-<body>
+<input type="text" id="txid" placeholder="Wklej TXID"
+       onkeypress="if(event.key==='Enter') sprawdzTx()">
 
-<div class="marquee">
-    <marquee>🔥 WITAM W DOŚWIADCZANIU INTERNETU LAT 90 • ARCHIWUM BLOCKCHAIN GBR • NAJLEPIEJ WYGLĄDA W ROZDZIELCZOŚCI 800x600 • STRONA W ROZ-BUDOWIE 🔥</marquee>
+<button onclick="sprawdzTx()">SZUKAJ</button>
+
+<div class="ad"><img src="{{ '/assets/d1.gif' | relative_url }}" width="10%"> POBIERZ ROM PACK (MOŻE NIE DZIAŁAĆ)</div>
+
+<div style="text-align:center; margin: 10px 0;">
+    <img id="gifStatus" src="https://i.gifer.com/7VE.gif" width="15%">
+    <div id="gifLabel" style="color:lime; margin-top:6px;">OCZEKIWANIE NA DANE...</div>
 </div>
 
-<div class="retro-layout">
-
-    <div class="big-banner">
-        🌐 GBR ARCHIWUM BLOCKCHAIN ^^ 1999 STYLE 🌐
-    </div>
-    <!-- LEFT -->
-	{% include sidebar-left.html %}
-    <!-- CENTER -->
-    <div class="container">
-
-        <h1><img src="assets/gb1.gif" width="5%"> GBR VIEWER v.1.0</h1>
-
-        <input type="text" id="txid" placeholder="Wklej TXID"
-               onkeypress="if(event.key==='Enter') sprawdzTx()">
-
-        <button onclick="sprawdzTx()">SZUKAJ</button>
-
-        <div class="ad">
-            <img src="assets/d1.gif" width="10%"> POBIERZ ROM PACK (MOŻE NIE DZIAŁAĆ)</div>
-
-        <div style="text-align:center; margin: 10px 0;">
-            <img id="gifStatus" src="assets/7VE.gif" width="15%">
-            <div id="gifLabel" style="color:lime; margin-top:6px;">OCZEKIWANIE NA DANE...</div>
-        </div>
-
-        <div id="output" class="output">▌</div>
-		
-		<button id="resetBtn" onclick="resetView()" style="display:none;">
-			⏪ RESETUJ WYSZUKIWANIE
-		</button>
-        <br>
-
-        <!-- fake 90s table clutter -->
-        <table class="table">
-			<img src="assets/link.gif" style="width:100%;">
-            <tr><td>STATUS</td><td><img src="assets/on1.gif" width="13%"></td></tr>
-            <tr><td>SERWER</td><td>BLOCKCHAIN SV NODE</td></tr>
-            <tr><td>FUNKCJA</td><td>ARCHIWUM</td></tr>
-			<tr><td>WŁAŚCICIEL KOLEKCJI</td><td>12f41kspxCovDd7UqKoxaSwgZ78R9iqdPF</td></tr>
-        </table>
-
-    </div>
-
-    <!-- RIGHT -->
-    {% include sidebar-right.html %}
-
-{% include footer.html %}
-
-</div>
-<script src="app.js"></script>
-</body>
-</html>
+<div id="output" class="output">▌</div>

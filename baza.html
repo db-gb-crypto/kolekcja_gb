@@ -1,101 +1,54 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>GBR Blockchain Viewer</title>
-	<link rel="stylesheet" href="style.css">
-</head>
+<div id="output" class="output">
+    <section class="box gb-info">
+        <b>📀 BAZA GIEREK GAME BOY (ARCHIWUM)</b>
+        <br><br>
 
-<body>
-<div class="marquee">
-	<marquee>🔥 WITAM W DOŚWIADCZANIU INTERNETU LAT 90 • ARCHIWUM BLOCKCHAIN GBR • NAJLEPIEJ WYGLĄDA W ROZDZIELCZOŚCI 800x600 • STRONA W ROZ-BUDOWIE 🔥</marquee>
-</div>
+        <pre style="color:lime;">
+        ==========================================
+           SYSTEM: GAME BOY / GB CLASSIC
+           TRYB: ARCHIWUM KOLEKCJI
+           OSTATNIA AKTUALIZACJA: 2026-07-04
+        ==========================================
+        </pre>
 
-<div class="retro-layout">
-
-    <div class="big-banner">
-        🌐 GBR ARCHIWUM BLOCKCHAIN ^^ 1999 STYLE 🌐
-    </div>
-    <!-- LEFT -->
-    {% include sidebar-left.html %}
-    <!-- CENTER -->
-    <div class="container">
-        <div id="output" class="output">
-			<section class="box gb-info">
-				<b>📀 BAZA GIEREK GAME BOY (ARCHIWUM)</b>
-				<br><br>
-
-				<pre style="color:lime;">
-				==========================================
-				   SYSTEM: GAME BOY / GB CLASSIC
-				   TRYB: ARCHIWUM KOLEKCJI
-				   OSTATNIA AKTUALIZACJA: 2026-07-04
-				==========================================
-				</pre>
-
-				<table class="table">
-				<tr>
-					<td>#ID</td>
-					<td>TYTUŁ</td>
-					<td>REGION</td>
-					<td>TXID</td>
-				</tr>
-
-				{% for gra in site.data.games %}
-				<tr>
-					<td>{{ gra.id }}</td>
-					<td>{{ gra.tytul }}</td>
-					<td>{{ gra.region }}</td>
-					<td>
-						<span class="txid"
-						onclick="copyTX(this)"
-						data-full="{{ gra.txid }}">
-						{{ gra.txid | slice: 0, 9 }}..
-						</span>
-					</td>
-				</tr>
-				{% endfor %}
-
-				</table>
-
-				<br>
-
-				<pre style="color:cyan;">
-				> KLIKNIJ TXID ABY SKOPIOWAĆ
-				> DANE POCHODZĄ Z BLOCKCHAIN BSV
-				</pre>
-
-				<marquee scrollamount="3">
-				🕹️ SYSTEM GOTOWY DO ODCZYTU TRANSAKCJI 🕹️
-				</marquee>
-
-			</section>
-		</div>
-
-		<button id="resetBtn" onclick="resetView()" style="display:none;">
-			⏪ RESETUJ WYSZUKIWANIE
-		</button>
-        <br>
-
-        <!-- fake 90s table clutter -->
         <table class="table">
-			<img src="assets/link.gif" style="width:100%;">
-            <tr><td>STATUS</td><td><img src="assets/on1.gif" width="13%"></td></tr>
-            <tr><td>SERWER</td><td>BLOCKCHAIN SV NODE</td></tr>
-            <tr><td>FUNKCJA</td><td>ARCHIWUM</td></tr>
-			<tr><td>WŁAŚCICIEL KOLEKCJI</td><td>12f41kspxCovDd7UqKoxaSwgZ78R9iqdPF</td></tr>
+        <tr>
+            <td>#ID</td>
+            <td>TYTUŁ</td>
+            <td>REGION</td>
+            <td>TXID</td>
+        </tr>
+
+        {% for gra in site.data.games %}
+        <tr>
+            <td>{{ gra.id }}</td>
+            <td>{{ gra.tytul }}</td>
+            <td>{{ gra.region }}</td>
+            <td>
+                <span class="txid"
+                onclick="copyTX(this)"
+                data-full="{{ gra.txid }}">
+                {{ gra.txid | slice: 0, 9 }}..
+                </span>
+            </td>
+        </tr>
+        {% endfor %}
+
         </table>
 
-    </div>
+        <br>
 
-    <!-- RIGHT -->
-	{% include sidebar-right.html %}
+        <pre style="color:cyan;">
+        > KLIKNIJ TXID ABY SKOPIOWAĆ
+        > DANE POCHODZĄ Z BLOCKCHAIN BSV
+        </pre>
 
-{% include footer.html %}
+        <marquee scrollamount="3">
+        🕹️ SYSTEM GOTOWY DO ODCZYTU TRANSAKCJI 🕹️
+        </marquee>
 
+    </section>
 </div>
-<script src="app.js"></script>
-</body>
-</html>
