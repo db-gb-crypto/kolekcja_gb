@@ -25,7 +25,10 @@ layout: default
         {% for gra in site.data.games %}
         <tr>
             <td>{{ gra.id }}</td>
-            <td>{{ gra.tytul }}</td>
+            <td>
+                {{ gra.tytul }}
+                {% if gra.nowy %}<br><span class="blink" style="color:red; font-size:11px;">🆕 NOWOŚĆ!</span>{% endif %}
+            </td>
             <td>{{ gra.region }}</td>
             <td>
                 <span class="txid"
