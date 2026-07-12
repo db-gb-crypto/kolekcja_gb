@@ -598,3 +598,20 @@ button:active {
         transform: translate(-50%, -50%) translateY(-25px) scale(0.3) rotate(90deg);
     }
 }
+
+
+.retro-hr {
+    height: 4px;
+    background: linear-gradient(90deg, red, orange, yellow, lime, cyan, blue, magenta);
+    background-size: 200% 100%;
+    border: none;
+    margin: 15px 0;
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(255,255,255,0.4);
+    animation: rainbowShift 3s linear infinite;
+}
+
+@keyframes rainbowShift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+}

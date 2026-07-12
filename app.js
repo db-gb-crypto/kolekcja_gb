@@ -236,9 +236,9 @@ document.addEventListener("mousemove", function(e){
 
 const titleFrames = [
     "🎮 GBR VIEWER",
-    "⚡ ARCHIWUM AKTYWNE",
-    "📀 BLOCKCHAIN ONLINE",
-    "🕹️ SYSTEM GOTOWY"
+    "⚡ GBR VIEWER",
+    "📀 GBR VIEWER",
+    "🕹️ GBR VIEWER"
 ];
 
 let titleIndex = 0;
