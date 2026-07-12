@@ -247,3 +247,18 @@ setInterval(() => {
     document.title = titleFrames[titleIndex % titleFrames.length];
     titleIndex++;
 }, 1200);
+
+
+
+fetch("https://countapi.mileshilliard.com/api/v1/hit/gbr-archiwum-blockchain")
+    .then(r => r.json())
+    .then(data => {
+        const counterEl = document.getElementById("visitCounter");
+        if(counterEl){
+            counterEl.textContent = String(data.value).padStart(6, "0");
+        }
+    })
+    .catch(() => {
+        const counterEl = document.getElementById("visitCounter");
+        if(counterEl) counterEl.textContent = "??????";
+    });
