@@ -67,7 +67,7 @@ function extractGameData(parts){
 
 
 function sprawdzTx(){
-	document.getElementById("gifStatus").src = "https://i.gifer.com/4SHX.gif";
+	document.getElementById("gifStatus").src = "assets/4SHX.gif";
 	document.getElementById("gifLabel").innerHTML = "⏳ ŁADOWANIE BLOKCHAIN...";
     const txid=document.getElementById("txid").value.trim();
     const out=document.getElementById("output");
@@ -101,7 +101,7 @@ function sprawdzTx(){
             }
 
             if(!found) throw new Error("❌ BRAK DANYCH - SPRÓBUJ INNEGO TXID 😄");
-				document.getElementById("gifStatus").src = "https://i.gifer.com/7efs.gif";
+				document.getElementById("gifStatus").src = "assets/7efs.gif";
 				document.getElementById("gifLabel").innerHTML = "✔ DANE ODNALEZIONE — ARCHIWUM AKTYWNE";
 
             out.innerHTML=`
@@ -141,7 +141,7 @@ function sprawdzTx(){
         .catch(e=>{
             out.innerHTML="ERROR: "+e.message;
 			document.getElementById("resetBtn").style.display = "inline-block";
-			document.getElementById("gifStatus").src = "https://i.gifer.com/ZZ5H.gif";
+			document.getElementById("gifStatus").src = "assets/ZZ5H.gif";
 			document.getElementById("gifLabel").innerHTML = "❌ BRAK DANYCH — SYGNAŁ PRZERWANY";
         });
 }
@@ -150,7 +150,7 @@ function resetView(){
     document.getElementById("txid").value = "";
     document.getElementById("output").innerHTML = "▌";
     document.getElementById("resetBtn").style.display = "none";
-	document.getElementById("gifStatus").src = "https://i.gifer.com/7VE.gif";
+	document.getElementById("gifStatus").src = "assets/7VE.gif";
     document.getElementById("gifLabel").innerHTML = "OCZEKIWANIE NA DANE...";
 }
 
