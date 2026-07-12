@@ -232,3 +232,18 @@ document.addEventListener("mousemove", function(e){
 
     setTimeout(() => star.remove(), 700);
 });
+
+
+const titleFrames = [
+    "🎮 GBR VIEWER",
+    "⚡ ARCHIWUM AKTYWNE",
+    "📀 BLOCKCHAIN ONLINE",
+    "🕹️ SYSTEM GOTOWY"
+];
+
+let titleIndex = 0;
+
+setInterval(() => {
+    document.title = titleFrames[titleIndex % titleFrames.length];
+    titleIndex++;
+}, 1200);
