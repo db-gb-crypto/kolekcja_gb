@@ -209,3 +209,26 @@ function startLiveLog(){
 }
 
 startLiveLog();
+
+
+const trailSymbols = ["✦", "✧", "★", "☆", "✶"];
+const trailColors = ["cyan", "magenta", "lime", "yellow"];
+
+let lastTrailTime = 0;
+
+document.addEventListener("mousemove", function(e){
+    const now = Date.now();
+    if(now - lastTrailTime < 40) return; // throttling — nie zapycha DOM
+    lastTrailTime = now;
+
+    const star = document.createElement("div");
+    star.className = "cursor-star";
+    star.textContent = trailSymbols[Math.floor(Math.random() * trailSymbols.length)];
+    star.style.left = e.clientX + "px";
+    star.style.top = e.clientY + "px";
+    star.style.color = trailColors[Math.floor(Math.random() * trailColors.length)];
+
+    document.body.appendChild(star);
+
+    setTimeout(() => star.remove(), 700);
+});

@@ -576,3 +576,25 @@ button:active {
     }
 }
 
+
+.cursor-star {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    font-size: 14px;
+    color: cyan;
+    text-shadow: 0 0 6px cyan, 0 0 10px magenta;
+    animation: starFade 0.7s ease-out forwards;
+    user-select: none;
+}
+
+@keyframes starFade {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(-25px) scale(0.3) rotate(90deg);
+    }
+}
