@@ -1,0 +1,204 @@
+- id: GBR-0001
+  tytul: "Tiny Toon Adventures: Babs' Big Break"
+  region: EUROPA
+  txid: "ba4476fda44823eabb960f9f1a0efbec56eea7c477d9deea20a468d4cb91bc5a"
+
+- id: GBR-0002
+  tytul: "Mario & Yoshi"
+  region: EUROPA
+  txid: "39d2cf7cf34788d51e54b1fcfad27148d19a158e0f52c210cc1b0755b19a5e0c"
+
+- id: GBR-0003
+  tytul: "The Bugs Bunny Crazy Castle"
+  region: EUROPA
+  txid: "0a65e1bad8b07479019e5fc36db95b9c25228eea266d9963d14727196f3be635"
+
+- id: GBR-0004
+  tytul: "Tennis"
+  region: EUROPA
+  txid: "1a53c5b5457dcbed91729f4894dff6840c0bc220bc84484d3aa8172d1d72d3b2"
+
+- id: GBR-0005
+  tytul: "Olympic Summer Games"
+  region: EUROPA
+  txid: "9ac6ba14505225ed5b44ea225c936c84f0962593b27e8f09621f32e892723179"
+
+- id: GBR-0006
+  tytul: "Burai Fighter Deluxe"
+  region: EUROPA
+  txid: "dd5fbe0830a0d8a6f032c38e62ccc9ad1d08cff5a46d45d5754c78bd95004c06"
+
+- id: GBR-0007
+  tytul: "F1 Race"
+  region: EUROPA
+  txid: "3dfd57decb260eec290efa051729e9e404aa06dbb8444524db6ef5555eff229e"
+
+- id: GBR-0008
+  tytul: "Game Boy Gallery 5in1"
+  region: EUROPA
+  txid: "186f8606c0da408aea4df5af8de3e19dd5f74af2b16058ac185f6b581d15d73e"
+
+- id: GBR-0009
+  tytul: "Shadowgate Classic"
+  region: EUROPA
+  txid: "3e50593217c9815b24f55fa1d9905bd9cfba8c5ce6f8ddb4d7c57eed82b1a63c"
+
+- id: GBR-0010
+  tytul: "Monopoly"
+  region: USA
+  txid: "2b931a4591fe08c251560e23a08ea1d693328dd68959657479f38be07cb321ec"
+
+- id: GBR-0011
+  tytul: "The Simpson's Bart vs. The Juggernauts"
+  region: USA
+  txid: "fd1c351fbcca54d4b25c1f52ebe61c2f68c99a10857b670b89d51adea384650b"
+
+- id: GBR-0012
+  tytul: "Qix"
+  region: USA
+  txid: "f41cbd0ebb01e03ed0fa8b0a408a2681284026759e4b082fa12ef917be80bb0d"
+
+- id: GBR-0013
+  tytul: "Super Mario Land"
+  region: JP
+  txid: "8994dcf647212f4a10a25358728ddbd2304434655dcf3a2af38cb5b0cec457db"
+
+- id: GBR-0014
+  tytul: "Pokemon Gelbe Edition"
+  region: EUROPA
+  txid: "0ff9a114ce06dcac53fe0059612ebed62393670fe5faee3d1063f636585c5fb8"
+
+- id: GBR-0015
+  tytul: "Dr. Mario"
+  region: EUROPA
+  txid: "3a9a0abaab7a888e1626e2266038eb7555e1f96838e0fb9d427be37512d0a9bb"
+
+- id: GBR-0016
+  tytul: "Solar Striker"
+  region: EUROPA
+  txid: "e76c39958dcee4c80dcff68ae635efeb740a0de648152f377523ac7d8db0b922"
+
+- id: GBR-0017
+  tytul: "Bust-a-move 2"
+  region: EUROPA
+  txid: "7366ffb765a8b353a29e995507e611ddbd14e384e87846e1dcabbfd94a0250c4"
+
+- id: GBR-0018
+  tytul: "True Lies"
+  region: EUROPA
+  txid: "409afecdf7c097691312296d4e86c9f0eeaaddf4300cc4fb42e093ae16167ec8"
+
+- id: GBR-0019
+  tytul: "Hugo 2 1/2"
+  region: EUROPA
+  txid: "61bffd6c12ce099233ab57056da101d62426bf6f7fbd502a5eeca5085f8e4246"
+
+- id: GBR-0020
+  tytul: "Donkey Kong Land"
+  region: EUROPA
+  txid: "ff103b3c1e142000f824bb0db0884ae62a5f0654621b6c5c44f879669c4f2e1e"
+
+- id: GBR-0021
+  tytul: "Duck Tales"
+  region: EUROPA
+  txid: "3ca181aa580c9a7fec651e233b9d47cb1185c90b12d037dbdd8bff0699ca87d4"
+
+- id: GBR-0022
+  tytul: "The Jungle Book"
+  region: EUROPA
+  txid: "373e0573ddc4fa2c072bb6a6858598705733c5f04aeea4e835b4a56261dc2f47"
+
+- id: GBR-0023
+  tytul: "Tetris"
+  region: EUROPA
+  txid: "b06d139f59a2aebd0f9f110493f36694cb7ad7685713492c0e84e25fe2ef4178"
+
+- id: GBR-0024
+  tytul: "Oddworld Adventures 2"
+  region: EUROPA
+  txid: "387e28e9857a7819eae1e37fda4f54c7827711840bdcfd31b6cfa8a959d660cd"
+
+- id: GBR-0025
+  tytul: "The Lion King"
+  region: EUROPA
+  txid: "3f291879a873bdc8174e0d765d41a7c567ac6761a820ab4ec7a389dde3e7bbd8"
+
+- id: GBR-0026
+  tytul: "Donkey Kong Land 3"
+  region: EUROPA
+  txid: "dcaa3a8b0eebcbda7b29d9d96aafad3713448b67a7bcd7282504cd6fd1b9b942"
+
+- id: GBR-0027
+  tytul: "Soccer"
+  region: EUROPA
+  txid: "e3c4a3f9cf145c95fd76be9f1bd08010f9781cf7f4377f7d27f21adc5499f394"
+
+- id: GBR-0028
+  tytul: "Wizards & Warriors X: Fortress of Fear"
+  region: EUROPA
+  txid: "5c82a213292e4f04a01ea7891cfb8b30649df4016fbc8b6b1a60fc6736733aa0"
+
+- id: GBR-0029
+  tytul: "Golf"
+  region: EUROPA
+  txid: "f6abfdec6b3605e159f12b10a44e26864cabe1968ab0bee4d4aa5fc523cf0cc9"
+
+- id: GBR-0030
+  tytul: "Boulder Dash"
+  region: EUROPA
+  txid: "efe9b06bd6e8c57ff8a842ab3732b4fb41438f397458d451dc811da27953969b"
+
+- id: GBR-0031
+  tytul: "Mega Man: Dr. Wily's Revenge"
+  region: EUROPA
+  txid: "5cdabe3abca75ed9fec5535e005d315eb6973fc990ef60e2320dd69f25894fbd"
+
+- id: GBR-0032
+  tytul: "Othello"
+  region: EUROPA
+  txid: "2a82648dd63af70a3cc16745c42fbbdbb0be6f9c40f61e41fd0c87f5b81faaf3"
+
+- id: GBR-0033
+  tytul: "Kirby's Pinball Land"
+  region: EUROPA
+  txid: "4fa099a1614085e2504519be9465d1ac6a54f5a09fc0bcf6b72f148b52ad3d3c"
+
+- id: GBR-0034
+  tytul: "Soccer"
+  region: EUROPA
+  txid: "75d91d92bc5b3b5e9973d017a8f9dd1346736f4dbea0ed079ff3f1088cd04723"
+
+- id: GBR-0035
+  tytul: "Glucksrad"
+  region: EUROPA
+  txid: "8e6e0a08a9bacda52887dbe3ff8d2c3d67a42550b51f97e3930a75f5c45e30d9"
+
+- id: GBR-0036
+  tytul: "NBA Jam"
+  region: EUROPA
+  txid: "fcc75e97db7c192a393539c2a146fb9fac486754ae30d8ed7525ba0c104ba84b"
+
+- id: GBR-0037
+  tytul: "Quest for Camelot"
+  region: EUROPA
+  txid: "b513eb4d62da5b0c8135d4e592748c92674ed81fd911106f56ac01ae20beb60a"
+
+- id: GBR-0038
+  tytul: "Alleyway"
+  region: EUROPA
+  txid: "8e8b376a38e126bbec0dea79874d00f27a724396c39ab4e62de66ac3709536f2"
+
+- id: GBR-0039
+  tytul: "Boxxle"
+  region: EUROPA
+  txid: "32f307283f60325b328e12c804d6883e8fcd4fbfba08e9c603e6f75a404c861c"
+
+- id: GBR-0040
+  tytul: "Donkey Kong Land 2"
+  region: EUROPA
+  txid: "d3aaf028dedba9917bd36e489e460d2b44ba2b025167d7d37786638772410a7f"
+
+- id: GBR-0041
+  tytul: "Tetris DX"
+  region: EUROPA
+  txid: "622614bd2c704e47a8d38087c587fcd0b64483681535696f677a1f528213b78d"
