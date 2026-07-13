@@ -202,10 +202,14 @@
   tytul: "Tetris DX"
   region: EUROPA
   txid: "622614bd2c704e47a8d38087c587fcd0b64483681535696f677a1f528213b78d"
-  nowy: true
 
 - id: GBR-0042
   tytul: "Marble Madness"
   region: EUROPA
   txid: "9c4aba4dec8d7c76cc35b36cabaaca609d93259e5e80afdf1480235d2cd9b2d7"
+
+- id: GBR-0043
+  tytul: "Lucky Luke"
+  region: EUROPA
+  txid: "748291eae009992d01b092426390c37b534b4b8a7d37f947fadb20f5f5ff4b03"
   nowy: true
