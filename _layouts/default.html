@@ -2,8 +2,19 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>GBR Blockchain Viewer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>{{ page.title | default: "GBR Archiwum Blockchain" }} — GBR</title>
+	<meta name="description" content="{{ page.description | default: 'Prywatne archiwum kolekcji gier Game Boy zweryfikowane w blockchain BSV. Baza gier, skany PCB, dziennik kolekcjonerski.' }}">
+
+	<!-- Open Graph (podgląd linku na Discord/FB/Messenger) -->
+	<meta property="og:title" content="{{ page.title | default: 'GBR Archiwum Blockchain' }}">
+	<meta property="og:description" content="{{ page.description | default: 'Prywatne archiwum kolekcji gier Game Boy zweryfikowane w blockchain BSV.' }}">
+	<meta property="og:image" content="{{ '/assets/gb1.gif' | absolute_url }}">
+	<meta property="og:type" content="website">
+
 	<link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+	<link rel="icon" href="{{ '/assets/gb1.gif' | relative_url }}" type="image/gif">
 </head>
 
 <body>
