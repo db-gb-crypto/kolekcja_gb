@@ -212,4 +212,9 @@
   tytul: "Lucky Luke"
   region: EUROPA
   txid: "748291eae009992d01b092426390c37b534b4b8a7d37f947fadb20f5f5ff4b03"
+
+- id: GBR-0044
+  tytul: "The Incredible Crash Dummies"
+  region: EUROPA
+  txid: "c805a4e20870d485afb8718a24a31394068074e124f8ca8a56e378304f9a285f"
   nowy: true
