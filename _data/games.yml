@@ -232,10 +232,15 @@
   tytul: "Casper"
   region: EUROPA
   txid: "aa685838aa25816a61b52c3b7f27d72f9ef6aecd31915f8d87ba4ff672fd5a3f"
-  nowy: true
 
 - id: GBR-0048
   tytul: "Double Dragon"
   region: EUROPA
   txid: "36d801bdd435ff43b8a511d5786f68425c506f2582f1a96c66890182da4d5971"
+  nowy: true
+
+- id: GBR-0049
+  tytul: "Adventure Island II"
+  region: EUROPA
+  txid: "3cc450f4cba01f3785175ae748e7034f3fb0022cdf2c31bc09a68b0086ef5614"
   nowy: true
