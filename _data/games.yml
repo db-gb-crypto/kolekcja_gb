@@ -217,10 +217,15 @@
   tytul: "The Incredible Crash Dummies"
   region: EUROPA
   txid: "c805a4e20870d485afb8718a24a31394068074e124f8ca8a56e378304f9a285f"
-  nowy: true
 
 - id: GBR-0045
   tytul: "Tetris Attack"
   region: EUROPA
   txid: "b0a759c4adf813723668ff4b45b7e318737a11c33258c075316e5182cecf4cfc"
+  nowy: true
+
+- id: GBR-0046
+  tytul: "The Smurfs"
+  region: EUROPA
+  txid: "959e1ac6cf5c0fb89f453591d8882801dc5c8eb6820f64b270702a931fb41e37"
   nowy: true
