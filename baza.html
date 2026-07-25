@@ -14,7 +14,9 @@ layout: default
         ==========================================
         </pre>
 
-        <table class="table">
+        <input type="text" id="gameSearch" placeholder="🔍 Szukaj gry po tytule..." onkeyup="filterGames()" style="margin-bottom:10px;">
+
+        <table class="table" id="gamesTable">
         <tr>
             <td>#ID</td>
             <td>TYTUŁ</td>
@@ -23,7 +25,7 @@ layout: default
         </tr>
 
         {% for gra in site.data.games %}
-        <tr>
+        <tr data-tytul="{{ gra.tytul | downcase }}">
             <td>{{ gra.id }}</td>
             <td>
                 {{ gra.tytul }}

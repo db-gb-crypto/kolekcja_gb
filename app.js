@@ -262,3 +262,14 @@ fetch("https://countapi.mileshilliard.com/api/v1/hit/gbr-archiwum-blockchain")
         const counterEl = document.getElementById("visitCounter");
         if(counterEl) counterEl.textContent = "??????";
     });
+
+// ===== FILTR WYSZUKIWANIA GIER =====
+function filterGames(){
+    const query = document.getElementById("gameSearch").value.toLowerCase();
+    const rows = document.querySelectorAll("#gamesTable tr[data-tytul]");
+
+    rows.forEach(row => {
+        const tytul = row.getAttribute("data-tytul");
+        row.style.display = tytul.includes(query) ? "" : "none";
+    });
+}
