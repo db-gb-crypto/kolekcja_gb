@@ -222,10 +222,20 @@
   tytul: "Tetris Attack"
   region: EUROPA
   txid: "b0a759c4adf813723668ff4b45b7e318737a11c33258c075316e5182cecf4cfc"
-  nowy: true
 
 - id: GBR-0046
   tytul: "The Smurfs"
   region: EUROPA
   txid: "959e1ac6cf5c0fb89f453591d8882801dc5c8eb6820f64b270702a931fb41e37"
+
+- id: GBR-0047
+  tytul: "Casper"
+  region: EUROPA
+  txid: "aa685838aa25816a61b52c3b7f27d72f9ef6aecd31915f8d87ba4ff672fd5a3f"
+  nowy: true
+
+- id: GBR-0048
+  tytul: "Double Dragon"
+  region: EUROPA
+  txid: "36d801bdd435ff43b8a511d5786f68425c506f2582f1a96c66890182da4d5971"
   nowy: true
