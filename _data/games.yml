@@ -249,3 +249,9 @@
   region: EUROPA
   txid: "1ab8b02df4bc3e611e53683737fed279e866ced9c1c07b35239efa3995068698"
   nowy: true
+
+- id: GBR-0051
+  tytul: "Hyper Lode Runner"
+  region: EUROPA
+  txid: "e551c01c501216066666473f482819f1de7e672613011474c7131390711c805d"
+  nowy: true
