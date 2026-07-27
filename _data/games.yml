@@ -242,16 +242,19 @@
   tytul: "Adventure Island II"
   region: EUROPA
   txid: "3cc450f4cba01f3785175ae748e7034f3fb0022cdf2c31bc09a68b0086ef5614"
-  nowy: true
 
 - id: GBR-0050
   tytul: "Donkey Kong"
   region: EUROPA
   txid: "1ab8b02df4bc3e611e53683737fed279e866ced9c1c07b35239efa3995068698"
-  nowy: true
 
 - id: GBR-0051
   tytul: "Hyper Lode Runner"
   region: EUROPA
   txid: "e551c01c501216066666473f482819f1de7e672613011474c7131390711c805d"
+
+- id: GBR-0052
+  tytul: "Mole Mania"
+  region: EUROPA
+  txid: "b9f568d3a44a87605e1fe2a925a13d190991d9d4103d4a5cf7c641a68398a542"
   nowy: true
