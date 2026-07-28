@@ -257,4 +257,9 @@
   tytul: "Mole Mania"
   region: EUROPA
   txid: "b9f568d3a44a87605e1fe2a925a13d190991d9d4103d4a5cf7c641a68398a542"
+
+- id: GBR-0053
+  tytul: "Kirby's Dream Land"
+  region: EUROPA
+  txid: "97832c25a6d1eac5385dcb8d49916fba6f5f8e36247d8845280e378c455bb448"
   nowy: true
