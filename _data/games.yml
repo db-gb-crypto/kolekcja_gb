@@ -267,10 +267,14 @@
   tytul: "Pachinko Time"
   region: JP
   txid: "2bce0eeb245d8947d355f7ff4cca0515fe68e09756c9b0a65b9b2aa8ecb1da6c"
-  nowy: true
 
 - id: GBR-0055
   tytul: "Yakuman"
   region: JP
   txid: "2fb55363e90af054fd58526559abaa0cbd384d280d0948dc8ea9810d8d4409ce"
+
+- id: GBR-0056
+  tytul: "The Flintstones"
+  region: USA
+  txid: "5f80230fe7f4b49bbfcc4c08e9431b8b288f0a486694891e7c3d706e4ce4d73e"
   nowy: true
