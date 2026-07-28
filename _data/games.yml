@@ -262,10 +262,15 @@
   tytul: "Kirby's Dream Land"
   region: EUROPA
   txid: "97832c25a6d1eac5385dcb8d49916fba6f5f8e36247d8845280e378c455bb448"
-  nowy: true
 
 - id: GBR-0054
   tytul: "Pachinko Time"
   region: JP
   txid: "2bce0eeb245d8947d355f7ff4cca0515fe68e09756c9b0a65b9b2aa8ecb1da6c"
+  nowy: true
+
+- id: GBR-0055
+  tytul: "Yakuman"
+  region: JP
+  txid: "2fb55363e90af054fd58526559abaa0cbd384d280d0948dc8ea9810d8d4409ce"
   nowy: true
