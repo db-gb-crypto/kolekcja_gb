@@ -277,10 +277,14 @@
   tytul: "The Flintstones"
   region: USA
   txid: "5f80230fe7f4b49bbfcc4c08e9431b8b288f0a486694891e7c3d706e4ce4d73e"
-  nowy: true
 
 - id: GBR-0057
   tytul: "Arcade Classic 1: Asteroids / Missile Command"
   region: EUROPA
   txid: "610488fceedd8072f9e1a335fa85ae4af2eb29da2b223aebb5434f647c7b7ec9"
+
+- id: GBR-0058
+  tytul: "Nekketsu Kōkō Soccer-bu: World Cup-hen"
+  region: JP
+  txid: "dc5aaf7b2062b6449d5bcd7c844e52db75addc8c5040f44d93d15de4fdbd7a1c"
   nowy: true
