@@ -192,7 +192,7 @@ button {
     margin-top: 20px;
     padding: 14px;
     background: black;
-    border: 3px ridge cyan;
+    border: 2px solid #56d8ff;
     min-height: 200px;
 }
 
