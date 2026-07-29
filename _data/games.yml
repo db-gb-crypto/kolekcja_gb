@@ -287,4 +287,9 @@
   tytul: "Nekketsu Kōkō Soccer-bu: World Cup-hen"
   region: JP
   txid: "dc5aaf7b2062b6449d5bcd7c844e52db75addc8c5040f44d93d15de4fdbd7a1c"
+
+- id: GBR-0059
+  tytul: "The Legend of Zelda: Link's Awakening"
+  region: EUROPA
+  txid: "33d147604fad639cb39945ec22847875518e3f08b80c32ad8ccfde109c6ded7f"
   nowy: true
