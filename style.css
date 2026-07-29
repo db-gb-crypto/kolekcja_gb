@@ -143,11 +143,16 @@ body::after {
 
 .box {
     background: black;
-    border: 3px ridge cyan;
+    border: 2px solid #56d8ff;
     padding: 10px;
     font-size: 15px;
     color: white;
 }
+
+box-shadow:
+    inset 0 0 18px rgba(255,255,255,.03),
+    inset 0 0 35px rgba(0,255,255,.04),
+    0 0 8px rgba(0,255,255,.10);
 
 .counter {
     color: lime;
