@@ -11,7 +11,7 @@ body {
         radial-gradient(circle at 80% 80%, rgba(0,255,255,0.10), transparent 45%),
         linear-gradient(180deg, #050617, #0b0f2a);
 
-    animation: flicker 0.12s infinite;
+    animation: flicker 6s infinite;
 }
 
 .txid {
@@ -31,15 +31,30 @@ body::before {
     position: fixed;
     inset: 0;
     pointer-events: none;
+
+    opacity: .12;
+
     background:
+        /* scanlines */
         repeating-linear-gradient(
             to bottom,
-            rgba(255,255,255,0.05) 0px,
-            rgba(255,255,255,0.02) 1px,
+            rgba(255,255,255,.018) 0px,
+            rgba(255,255,255,.008) 1px,
             transparent 3px,
             transparent 5px
+        ),
+
+        /* delikatny dithering / LCD */
+        repeating-radial-gradient(
+            circle,
+            rgba(255,255,255,.02) 0 1px,
+            transparent 2px 4px
         );
-    mix-blend-mode: overlay;
+
+    mix-blend-mode: soft-light;
+
+    box-shadow:
+        inset 0 0 140px rgba(0,0,0,.35);
 }
 
 
@@ -60,10 +75,28 @@ body::after {
     100% { transform: translate(0,0); }
 }
 
-@keyframes flicker {
-    0% { opacity: 1; }
-    50% { opacity: 0.98; }
-    100% { opacity: 1; }
+@keyframes flicker{
+
+    0%,96%{
+    opacity:1;
+    }
+
+    97%{
+    opacity:.985;
+    }
+
+    98%{
+    opacity:.995;
+    }
+
+    99%{
+    opacity:.99;
+    }
+
+    100%{
+    opacity:1;
+    }
+
 }
 
 
