@@ -292,13 +292,11 @@
   tytul: "The Legend of Zelda: Link's Awakening"
   region: EUROPA
   txid: "33d147604fad639cb39945ec22847875518e3f08b80c32ad8ccfde109c6ded7f"
-  nowy: true
 
 - id: GBR-0060
   tytul: "Double Dragon II"
   region: USA
   txid: "e76a4dce73cc1ca361eb0d672ea88bba8501f275462974a14b54f86efd15adea"
-  nowy: true
 
 - id: GBR-0061
   tytul: "Daffy Duck"
