@@ -1,4 +1,22 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+:root {
+    /* === GAME BOY DMG PALETTE (autentyczne 4 odcienie zieleni) === */
+    --gb-green-1: #0f380f; /* najciemniejszy - tekst/cienie */
+    --gb-green-2: #306230; /* ciemna zieleń */
+    --gb-green-3: #8bac0f; /* jasna zieleń */
+    --gb-green-4: #9bbc0f; /* najjaśniejszy - tło ekranu */
+
+    /* === OBUDOWA KONSOLI === */
+    --gb-shell: #d3d3c4;
+    --gb-shell-hi: #ece9d8;
+    --gb-shell-lo: #9a988a;
+    --gb-shell-shadow: #6f6d5f;
+    --gb-screen-frame: #3a3a3a;
+    --gb-power-led: #ff3b3b;
+}
+
 body {
     margin: 0;
     font-family: "Comic Sans MS", "Courier New", monospace;
@@ -11,18 +29,19 @@ body {
         radial-gradient(circle at 80% 80%, rgba(0,255,255,0.10), transparent 45%),
         linear-gradient(180deg, #050617, #0b0f2a);
 
-    animation: flicker 6s infinite;
+    animation: flicker 0.12s infinite;
 }
 
 .txid {
-    color: lime !important;
+    color: var(--gb-green-1) !important;
     cursor: pointer !important;
     text-decoration: underline;
-    font-family: monospace;
+    font-family: "VT323", monospace;
+    font-size: 20px;
 }
 
 .txid:hover {
-    color: yellow !important;
+    color: #7a4d00 !important;
     cursor: pointer !important;
 }
 
@@ -31,39 +50,15 @@ body::before {
     position: fixed;
     inset: 0;
     pointer-events: none;
-    z-index: 9998;
-
-    opacity: .14;
-
     background:
-
-        /* scanlines */
         repeating-linear-gradient(
             to bottom,
-            rgba(255,255,255,.02) 0px,
-            rgba(255,255,255,.008) 1px,
+            rgba(255,255,255,0.05) 0px,
+            rgba(255,255,255,0.02) 1px,
             transparent 3px,
             transparent 5px
-        ),
-
-        /* bardzo delikatny LCD noise */
-        repeating-radial-gradient(
-            circle,
-            rgba(255,255,255,.018) 0 1px,
-            transparent 2px 4px
-        ),
-
-        /* środek trochę jaśniejszy */
-        radial-gradient(
-            ellipse at center,
-            rgba(255,255,255,.025),
-            transparent 72%
         );
-
-    mix-blend-mode: soft-light;
-
-    box-shadow:
-        inset 0 0 140px rgba(0,0,0,.35);
+    mix-blend-mode: overlay;
 }
 
 
@@ -84,28 +79,10 @@ body::after {
     100% { transform: translate(0,0); }
 }
 
-@keyframes flicker{
-
-    0%,96%{
-    opacity:1;
-    }
-
-    97%{
-    opacity:.985;
-    }
-
-    98%{
-    opacity:.995;
-    }
-
-    99%{
-    opacity:.99;
-    }
-
-    100%{
-    opacity:1;
-    }
-
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.98; }
+    100% { opacity: 1; }
 }
 
 
@@ -143,16 +120,11 @@ body::after {
 
 .box {
     background: black;
-    border: 2px solid #56d8ff;
+    border: 3px ridge cyan;
     padding: 10px;
     font-size: 15px;
     color: white;
 }
-
-box-shadow:
-    inset 0 0 18px rgba(255,255,255,.03),
-    inset 0 0 35px rgba(0,255,255,.04),
-    0 0 8px rgba(0,255,255,.10);
 
 .counter {
     color: lime;
@@ -162,9 +134,90 @@ box-shadow:
 
 
 .container {
-    padding: 20px;
-    background: black;
-    border: 6px dashed lime;
+    padding: 34px 24px 40px;
+    background: linear-gradient(180deg, var(--gb-shell-hi) 0%, var(--gb-shell) 45%, var(--gb-shell-lo) 100%);
+    border: none;
+    border-radius: 16px 16px 46px 16px;
+    position: relative;
+    box-shadow:
+        inset 0 2px 0 rgba(255,255,255,0.6),
+        inset 0 -10px 18px rgba(0,0,0,0.25),
+        0 10px 0 var(--gb-shell-shadow),
+        0 18px 24px rgba(0,0,0,0.55);
+}
+
+/* --- lampka POWER --- */
+.container::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--gb-power-led);
+    box-shadow: 0 0 6px 2px rgba(255,59,59,0.8), inset 0 0 2px rgba(0,0,0,0.4);
+    animation: powerBlink 2.4s infinite;
+}
+
+@keyframes powerBlink {
+    0%, 92%, 100% { opacity: 1; }
+    96% { opacity: 0.5; }
+}
+
+.gb-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 14px;
+    margin: -14px -4px 14px 40px;
+    font-family: "Press Start 2P", "Comic Sans MS", monospace;
+    font-size: 8px;
+    color: var(--gb-shell-shadow);
+    letter-spacing: 1px;
+}
+
+.gb-power-label {
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    font-family: "Press Start 2P", monospace;
+    font-size: 7px;
+    color: var(--gb-shell-shadow);
+    letter-spacing: 1px;
+}
+
+.gb-speaker {
+    display: grid;
+    grid-template-columns: repeat(6, 5px);
+    gap: 5px;
+    transform: rotate(-25deg);
+}
+
+.gb-speaker span {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--gb-shell-lo);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.5);
+}
+
+.gb-wordmark {
+    position: absolute;
+    bottom: 8px;
+    right: 22px;
+    font-family: "Press Start 2P", monospace;
+    font-size: 8px;
+    color: var(--gb-shell-shadow);
+    letter-spacing: 0.5px;
+    opacity: 0.85;
+}
+
+.gb-wordmark b {
+    all: unset;
+    font-family: "Press Start 2P", monospace;
+    font-style: italic;
+    color: #3a3a8c;
 }
 
 
@@ -190,10 +243,25 @@ button {
 
 .output {
     margin-top: 20px;
-    padding: 14px;
-    background: black;
-    border: 2px solid #56d8ff;
+    padding: 16px;
     min-height: 200px;
+
+    background-color: var(--gb-green-4);
+    background-image:
+        repeating-linear-gradient(0deg, rgba(15,56,15,0.10) 0px, rgba(15,56,15,0.10) 1px, transparent 1px, transparent 3px),
+        repeating-linear-gradient(90deg, rgba(15,56,15,0.10) 0px, rgba(15,56,15,0.10) 1px, transparent 1px, transparent 3px),
+        radial-gradient(ellipse at 50% 30%, rgba(155,188,15,0.35), transparent 70%);
+
+    color: var(--gb-green-1);
+    font-family: "VT323", "Courier New", monospace;
+    font-size: 22px;
+
+    border: 10px solid var(--gb-screen-frame);
+    border-radius: 4px;
+    box-shadow:
+        inset 0 0 0 3px #1c1c1c,
+        inset 0 0 24px rgba(15,56,15,0.55),
+        0 3px 8px rgba(0,0,0,0.5);
 }
 
 
@@ -225,7 +293,7 @@ button {
 }
 
 .table td {
-    border: 1px solid cyan;
+    border: 1px solid var(--gb-green-2);
     padding: 4px;
 }
 
@@ -304,7 +372,7 @@ button:active {
     left: 0;
     width: 100%;
     height: 2px;
-    background: rgba(0,255,255,0.4);
+    background: rgba(15,56,15,0.35);
     animation: scanlineMove 4s linear infinite;
 }
 
@@ -319,7 +387,7 @@ button:active {
     position: absolute;
     bottom: 5px;
     right: 10px;
-    color: lime;
+    color: var(--gb-green-1);
     animation: blink 1s infinite;
 }
 
@@ -330,6 +398,10 @@ button:active {
 
 
 .container h1 {
+    color: #2b2b2b;
+    font-family: "Press Start 2P", "Comic Sans MS", monospace;
+    font-size: 15px;
+    line-height: 1.9;
     animation: glitch 2s infinite;
 }
 
@@ -344,26 +416,25 @@ button:active {
 
 
 .output h3 {
-    font-size: 28px;
-    color: cyan;
+    font-family: "Press Start 2P", monospace;
+    font-size: 16px;
+    color: var(--gb-green-4);
     text-align: center;
-    padding: 8px;
+    padding: 12px 8px;
     margin-bottom: 10px;
+    line-height: 1.8;
 
-    border: 3px double magenta;
-    background: linear-gradient(90deg, #000, #111, #000);
+    border: 3px double var(--gb-green-1);
+    background: linear-gradient(90deg, var(--gb-green-1), var(--gb-green-2), var(--gb-green-1));
 
-    text-shadow:
-        0 0 5px cyan,
-        0 0 10px blue,
-        2px 2px 0px black;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
 
     animation: titlePulse 1.5s infinite alternate;
 }
 
 @keyframes titlePulse {
-    0% { box-shadow: 0 0 5px cyan; }
-    100% { box-shadow: 0 0 20px magenta; }
+    0% { box-shadow: 0 0 5px var(--gb-green-2); }
+    100% { box-shadow: 0 0 16px var(--gb-green-1); }
 }
 
 .output b {
@@ -371,13 +442,11 @@ button:active {
     margin-top: 12px;
     padding: 4px 6px;
 
-    color: lime;
-    background: black;
+    color: var(--gb-green-4);
+    background: var(--gb-green-1);
 
-    border-left: 5px solid cyan;
-    border-bottom: 2px solid cyan;
-
-    text-shadow: 0 0 5px lime;
+    border-left: 5px solid var(--gb-green-2);
+    border-bottom: 2px solid var(--gb-green-2);
 
     position: relative;
 }
@@ -390,7 +459,7 @@ button:active {
     bottom: -2px;
     width: 100%;
     height: 1px;
-    background: linear-gradient(to right, cyan, transparent);
+    background: linear-gradient(to right, var(--gb-green-3), transparent);
 }
 
 
@@ -404,8 +473,10 @@ button:active {
 
 
 .output b:hover {
-    color: yellow;
-    text-shadow: 0 0 10px yellow;
+    color: #fff4d1;
+    background: #7a4d00;
+    border-left-color: #d4a017;
+    border-bottom-color: #d4a017;
 }
 
 
@@ -646,6 +717,69 @@ button:active {
     }
 }
 
+
+.gb-controller {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px 10px;
+    background: linear-gradient(180deg, var(--gb-shell-hi), var(--gb-shell-lo));
+    border: none;
+    border-radius: 10px;
+}
+
+.gb-dpad {
+    position: relative;
+    width: 54px;
+    height: 54px;
+}
+
+.gb-dpad::before,
+.gb-dpad::after {
+    content: "";
+    position: absolute;
+    background: #2b2b2b;
+    border-radius: 3px;
+    box-shadow: inset 0 2px 2px rgba(255,255,255,0.15), 0 2px 3px rgba(0,0,0,0.5);
+}
+
+.gb-dpad::before {
+    left: 18px;
+    top: 0;
+    width: 18px;
+    height: 54px;
+}
+
+.gb-dpad::after {
+    left: 0;
+    top: 18px;
+    width: 54px;
+    height: 18px;
+}
+
+.gb-ab {
+    display: flex;
+    gap: 10px;
+    transform: rotate(-20deg);
+}
+
+.gb-btn {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #a83a5a, #6b1f38);
+    color: #ffd7e2;
+    font-family: "Press Start 2P", monospace;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 0 #4a1526, inset 0 1px 1px rgba(255,255,255,0.3);
+}
+
+.gb-ab .gb-btn:first-child {
+    margin-top: 14px;
+}
 
 .retro-hr {
     height: 4px;
