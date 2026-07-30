@@ -32,11 +32,11 @@ function copyTX(el) {
 
     const old = el.innerText;
     el.innerText = "SKOPIOWANO!";
-    el.style.color = "yellow";
+    el.style.color = "#7a4d00"; // bursztynowa poświata "GB Light" po skopiowaniu
 
     setTimeout(() => {
         el.innerText = old;
-        el.style.color = "lime";
+        el.style.color = "";
     }, 1500);
 }
 
