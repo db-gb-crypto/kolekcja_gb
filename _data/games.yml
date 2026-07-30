@@ -299,3 +299,9 @@
   region: USA
   txid: "e76a4dce73cc1ca361eb0d672ea88bba8501f275462974a14b54f86efd15adea"
   nowy: true
+
+- id: GBR-0061
+  tytul: "Daffy Duck"
+  region: EUROPA
+  txid: "6d936bfcdcad445cc72909622eba6727c3806d0543591d87bb0f2d939900f09c"
+  nowy: true
