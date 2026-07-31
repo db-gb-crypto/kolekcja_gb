@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
 
 :root {
@@ -29,7 +28,7 @@ body {
         radial-gradient(circle at 80% 80%, rgba(0,255,255,0.10), transparent 45%),
         linear-gradient(180deg, #050617, #0b0f2a);
 
-    animation: flicker 0.12s infinite;
+    animation: flicker 6s infinite;
 }
 
 .txid {
@@ -122,7 +121,8 @@ body::after {
     background: black;
     border: 3px ridge cyan;
     padding: 10px;
-    font-size: 15px;
+    font-size: 20px;
+    line-height: 1.5;
     color: white;
 }
 
@@ -289,7 +289,7 @@ button {
 .table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .table td {
