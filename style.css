@@ -121,9 +121,15 @@ body::after {
     background: black;
     border: 3px ridge cyan;
     padding: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+/* Większa, czytelniejsza czcionka TYLKO w działach treści:
+   Baza Gierek / Nintendo / Dziennik (sekcje <section class="box gb-info">) */
+.box.gb-info {
     font-size: 20px;
     line-height: 1.5;
-    color: white;
 }
 
 .counter {
@@ -289,6 +295,11 @@ button {
 .table {
     width: 100%;
     border-collapse: collapse;
+    font-size: 14px;
+}
+
+/* Większa czcionka w tabeli TYLKO na Bazie Gierek (tabela wewnątrz .gb-info) */
+.gb-info .table {
     font-size: 18px;
 }
 
