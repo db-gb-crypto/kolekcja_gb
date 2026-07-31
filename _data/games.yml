@@ -308,3 +308,9 @@
   region: EUROPA
   txid: "aa5a642dc84c3d4cd0323168e7e83e8b2a0536a450f8a159c24a86c32355030a"
   nowy: true
+
+- id: GBR-0063
+  tytul: "Pierre le Chef is... Out to Lunch"
+  region: EUROPA
+  txid: "c661cc12f45e09239e5f41d9b00a8599758943a194a7c9b5a313bdef325024de"
+  nowy: true
