@@ -317,4 +317,9 @@
   tytul: "Hugo"
   region: EUROPA
   txid: "d2392e46eafd98a73310384bd7ccc262fab508e96cdd976e2da14f8afe8af59f"
+
+- id: GBR-0065
+  tytul: "Hugo 2"
+  region: EUROPA
+  txid: "4469c6d80e74f26bc4102e771d02dfb607a312f6304d34d0d5b10b3338cac822"
   nowy: true
