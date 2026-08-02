@@ -323,3 +323,9 @@
   region: EUROPA
   txid: "4469c6d80e74f26bc4102e771d02dfb607a312f6304d34d0d5b10b3338cac822"
   nowy: true
+
+- id: GBR-0066
+  tytul: "Disney's DuckTales 2"
+  region: EUROPA
+  txid: "873e2ea2b8035ced9e428bbdd5433680750ca99b64e95529bf91951196c55ace"
+  nowy: true
