@@ -332,10 +332,14 @@
   tytul: "Wario Land: Super Mario Land 3"
   region: EUROPA
   txid: "603f594995b97186a584a1fb5f4b5b6f612bc5deecf7430637ba872d98fedff4"
-  nowy: true
 
 - id: GBR-0068
   tytul: "Super Mario Land 2: 6 Golden Coins"
   region: EUROPA
   txid: "c77f35bdc901ab348add406a89458f67a90bf9071caa85fbaa48d7ea815d8326"
+
+- id: GBR-0069
+  tytul: "Bamse"
+  region: EUROPA
+  txid: "e522c3324550fe8471d14a45ac9be663ae9db4a4f2f2c9d91f675179815be810"
   nowy: true
