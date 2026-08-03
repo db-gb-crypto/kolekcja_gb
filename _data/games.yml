@@ -342,4 +342,9 @@
   tytul: "Bamse"
   region: EUROPA
   txid: "e522c3324550fe8471d14a45ac9be663ae9db4a4f2f2c9d91f675179815be810"
+
+- id: GBR-0070
+  tytul: "Taito Chase H.Q."
+  region: JP
+  txid: "84872935d8f89fc556cf04844d044a652b1e9ac94dd7e837cd3976bdd63ac023"
   nowy: true
