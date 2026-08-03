@@ -333,3 +333,9 @@
   region: EUROPA
   txid: "603f594995b97186a584a1fb5f4b5b6f612bc5deecf7430637ba872d98fedff4"
   nowy: true
+
+- id: GBR-0068
+  tytul: "Super Mario Land 2: 6 Golden Coins"
+  region: EUROPA
+  txid: "c77f35bdc901ab348add406a89458f67a90bf9071caa85fbaa48d7ea815d8326"
+  nowy: true
