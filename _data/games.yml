@@ -348,3 +348,9 @@
   region: JP
   txid: "84872935d8f89fc556cf04844d044a652b1e9ac94dd7e837cd3976bdd63ac023"
   nowy: true
+
+- id: GBR-0071
+  tytul: "Megalit"
+  region: EUROPA
+  txid: "6ae56031d4846e31e86d9e1ec5ad05fbe0b93e040dc33966816f29a780704b32"
+  nowy: true
