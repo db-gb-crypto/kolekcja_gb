@@ -308,6 +308,25 @@ button {
     padding: 4px;
 }
 
+/* Lista gier w tabeli wygląda jak ekran LCD (tak jak hack.html) —
+   jasnozielone tło + ciemnozielony tekst, zamiast czarnego tła z .box */
+#gamesTable {
+    background-color: var(--gb-green-4);
+    color: var(--gb-green-1);
+    font-family: "VT323", "Courier New", monospace;
+}
+
+#gamesTable td {
+    border: 1px solid var(--gb-green-2);
+    color: var(--gb-green-1);
+}
+
+/* Delikatne podświetlenie wiersza pod kursorem */
+#gamesTable tr:hover td {
+    background-color: var(--gb-green-3);
+    transition: background-color 0.15s ease;
+}
+
 
 .footer {
     grid-column: 1 / span 3;
