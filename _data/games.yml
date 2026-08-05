@@ -367,4 +367,9 @@
   tytul: "Nemesis"
   region: JP
   txid: "c7a60d0619ca8bbd0b8535a1f6d479d5bf6f90847c64e35dfefe7483243a8a48"
+
+- id: GBR-0075
+  tytul: "Bubble Bobble"
+  region: JP
+  txid: "a06852257d1d3661c6821b313e935796e7bf69bd3737a088dc020501179a0923"
   nowy: true
