@@ -357,4 +357,9 @@
   tytul: "Quarth"
   region: JP
   txid: "b9d1b194cdcbd3ccdb1c133a0282bcb64946c93f7a7844653e99ef695fdb63eb"
+
+- id: GBR-0073
+  tytul: "Revenge of the 'Gator"
+  region: EUROPA
+  txid: "5b7ba3d8bef9a60ba16f57893a0eca1130c4ada399b7c227932a18fbfe8cb5a4"
   nowy: true
