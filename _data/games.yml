@@ -373,3 +373,9 @@
   region: JP
   txid: "a06852257d1d3661c6821b313e935796e7bf69bd3737a088dc020501179a0923"
   nowy: true
+
+- id: GBR-0076
+  tytul: "Mystic Quest"
+  region: EUROPA
+  txid: "674d2af715e73d2589f8c3a75f123de969b992d9ee6728d29cf79bd5bd3f2ccd"
+  nowy: true
