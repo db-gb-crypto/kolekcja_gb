@@ -378,3 +378,9 @@
   region: EUROPA
   txid: "674d2af715e73d2589f8c3a75f123de969b992d9ee6728d29cf79bd5bd3f2ccd"
   nowy: true
+
+- id: GBR-0077
+  tytul: "Peke to Poko no Daruman Busters"
+  region: JP
+  txid: "8417aa018acc87825017a92397ba272324469ac2186fdcd97bcb057664822c7c"
+  nowy: true
