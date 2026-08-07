@@ -384,3 +384,9 @@
   region: JP
   txid: "8417aa018acc87825017a92397ba272324469ac2186fdcd97bcb057664822c7c"
   nowy: true
+
+- id: GBR-0078
+  tytul: "Disney's The Little Mermaid"
+  region: EUROPA
+  txid: "7047d41f82d4001c36a6df8e690d11787aab601ba3091745135a2313080ef915"
+  nowy: true
