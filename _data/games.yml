@@ -397,4 +397,9 @@
   tytul: "V-Rally: Championship Edition"
   region: EUROPA
   txid: "dc09e926401318367c146df5beace48c5f5f1c2f084619383d2a3ef30d9c2363"
+
+- id: GBR-0081
+  tytul: "NHL 96"
+  region: EUROPA
+  txid: "f5c9ff1f2add41f2ac867e73e72c87444e93878d3110e0a3b3ee6592c1cad321"
   nowy: true
