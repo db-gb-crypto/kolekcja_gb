@@ -402,4 +402,9 @@
   tytul: "NHL 96"
   region: EUROPA
   txid: "f5c9ff1f2add41f2ac867e73e72c87444e93878d3110e0a3b3ee6592c1cad321"
+
+- id: GBR-0082
+  tytul: "Nigel Mansell's World Championship"
+  region: EUROPA
+  txid: "a5669eb70644de1c1a8cc31edb6521d1cf233da5a2ecde689144e6bd898395b0"
   nowy: true
