@@ -4,9 +4,9 @@
 #       karta przenosi do index.html i automatycznie odpytuje blockchain o ten TXID.
 
 - id: FF-0001
-  tytul: "Final Fantasy Legend"
+  tytul: "Final Fantasy Amthology"
   region: USA
-  obrazek: "ff-legend.jpg"
+  obrazek: "ffanthology.jpg"
 
 - id: FF-0002
   tytul: "Final Fantasy Adventure"
