@@ -7,16 +7,13 @@
   tytul: "Final Fantasy Legend"
   region: USA
   obrazek: "ff-legend.jpg"
-  txid: "WKLEJ_TU_PRAWDZIWY_TXID_1"
 
 - id: FF-0002
   tytul: "Final Fantasy Adventure"
   region: EUROPA
   obrazek: "ff-adventure.jpg"
-  txid: "WKLEJ_TU_PRAWDZIWY_TXID_2"
 
 - id: FF-0003
   tytul: "Final Fantasy Legend II"
   region: USA
   obrazek: "ff-legend2.jpg"
-  txid: "WKLEJ_TU_PRAWDZIWY_TXID_3"
