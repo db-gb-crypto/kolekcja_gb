@@ -867,11 +867,13 @@ button:active {
     inset: 0;
     background: linear-gradient(
         180deg,
-        rgba(0,0,0,0.65) 0%,
-        transparent 22%,
-        transparent 62%,
-        rgba(0,0,0,0.55) 78%,
-        rgba(0,0,0,0.88) 100%
+        rgba(0,0,0,0.88) 0%,
+        rgba(0,0,0,0.25) 28%,
+        transparent 42%,
+        transparent 58%,
+        rgba(0,0,0,0.35) 68%,
+        rgba(0,0,0,0.80) 85%,
+        rgba(0,0,0,0.95) 100%
     );
     pointer-events: none;
 }
@@ -915,4 +917,159 @@ button:active {
  
 @media (max-width: 500px) {
     .ff-grid { grid-template-columns: 1fr; }
+}
+
+
+/* =====================================================
+   BAZA GIEREK GAME BOY — siatka kart 4 w rzędzie
+   (ID, region, tytuł, TXID do skopiowania)
+   ===================================================== */
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.game-card {
+    position: relative;
+    display: block;
+    aspect-ratio: 3 / 4;
+    border: 2px solid var(--gb-green-2);
+    border-radius: 4px;
+    overflow: hidden;
+
+    background-color: #111;
+    background-size: cover;
+    background-position: center;
+
+    box-shadow: 0 0 5px rgba(139,172,15,0.2);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+/* karty bez zdjęcia — wyglądają jak ekran LCD (tak jak hack.html) zamiast pustego kafelka */
+.game-card.no-cover {
+    background-color: var(--gb-green-4);
+    background-image:
+        repeating-linear-gradient(0deg, rgba(15,56,15,0.10) 0px, rgba(15,56,15,0.10) 1px, transparent 1px, transparent 3px),
+        repeating-linear-gradient(90deg, rgba(15,56,15,0.10) 0px, rgba(15,56,15,0.10) 1px, transparent 1px, transparent 3px);
+}
+
+.game-card.no-cover .game-title,
+.game-card.no-cover .game-id,
+.game-card.no-cover .game-region {
+    color: var(--gb-green-1);
+    text-shadow: none;
+}
+
+.game-card.no-cover .game-info {
+    background: rgba(15,56,15,0.25);
+}
+
+/* przyciemnienie góry/dołu zdjęcia, tak samo jak w Kolekcji Final Fantasy */
+.game-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0,0,0,0.85) 0%,
+        rgba(0,0,0,0.20) 26%,
+        transparent 42%,
+        transparent 55%,
+        rgba(0,0,0,0.30) 65%,
+        rgba(0,0,0,0.80) 82%,
+        rgba(0,0,0,0.92) 100%
+    );
+    pointer-events: none;
+}
+
+.game-card.no-cover::before {
+    display: none;
+}
+
+.game-card:hover {
+    transform: translateY(-3px) scale(1.02);
+    border-color: var(--gb-green-3);
+    box-shadow: 0 0 14px rgba(139,172,15,0.5);
+    z-index: 2;
+}
+
+.game-id {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: 1;
+    color: #fff;
+    font-family: "VT323", "Courier New", monospace;
+    font-size: 13px;
+    text-shadow: 0 0 4px #000, 1px 1px 0 #000;
+}
+
+.game-region {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    z-index: 1;
+    background: rgba(15,56,15,0.85);
+    color: var(--gb-green-4);
+    font-family: "VT323", "Courier New", monospace;
+    font-size: 11px;
+    padding: 1px 4px;
+    border: 1px solid var(--gb-green-3);
+    border-radius: 3px;
+}
+
+.game-new {
+    position: absolute;
+    top: 24px;
+    right: 4px;
+    z-index: 1;
+    color: red;
+    font-size: 10px;
+    font-family: "VT323", "Courier New", monospace;
+    text-shadow: 0 0 4px #000;
+}
+
+.game-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    padding: 5px 6px;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.game-title {
+    color: #fff;
+    font-family: "VT323", "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.15;
+    text-shadow: 0 0 4px #000;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.game-card .txid {
+    font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+    .game-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 650px) {
+    .game-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 400px) {
+    .game-grid { grid-template-columns: 1fr; }
 }
