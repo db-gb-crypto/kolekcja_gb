@@ -26,21 +26,25 @@
   tytul: "Olympic Summer Games"
   region: EUROPA
   txid: "9ac6ba14505225ed5b44ea225c936c84f0962593b27e8f09621f32e892723179"
+  obrazek: "gbr0005.jpg"
 
 - id: GBR-0006
   tytul: "Burai Fighter Deluxe"
   region: EUROPA
   txid: "dd5fbe0830a0d8a6f032c38e62ccc9ad1d08cff5a46d45d5754c78bd95004c06"
+  obrazek: "gbr0006.jpg"
 
 - id: GBR-0007
   tytul: "F1 Race"
   region: EUROPA
   txid: "3dfd57decb260eec290efa051729e9e404aa06dbb8444524db6ef5555eff229e"
+  obrazek: "gbr0007.jpg"
 
 - id: GBR-0008
   tytul: "Game Boy Gallery 5in1"
   region: EUROPA
   txid: "186f8606c0da408aea4df5af8de3e19dd5f74af2b16058ac185f6b581d15d73e"
+  obrazek: "gbr0008.jpg"
 
 - id: GBR-0009
   tytul: "Shadowgate Classic"
