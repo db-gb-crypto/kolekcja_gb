@@ -17,18 +17,17 @@ description: "Kolekcja gier z serii Final Fantasy, zweryfikowana w blockchain BS
 
         <div class="ff-grid">
             {% for gra in site.data.final_fantasy %}
-            <a class="ff-card"
-               href="index.html?txid={{ gra.txid }}"
+            <div class="ff-card"
                style="background-image: url('{{ '/assets/ff/' | relative_url }}{{ gra.obrazek }}');">
                 <span class="ff-region">{{ gra.region }}</span>
                 <span class="ff-title">{{ gra.tytul }}</span>
-            </a>
+            </div>
             {% endfor %}
         </div>
 
         <br>
         <pre style="color:cyan;">
-        > KLIKNIJ OKNO ABY ZOBACZYĆ SZCZEGÓŁY Z BLOCKCHAIN
+        > KOLEKCJA W BUDOWIE
         </pre>
     </section>
 </div>
