@@ -16,33 +16,26 @@ layout: default
 
         <input type="text" id="gameSearch" placeholder="🔍 Szukaj gry po tytule..." onkeyup="filterGames()" style="margin-bottom:10px;">
 
-        <table class="table" id="gamesTable">
-        <tr>
-            <td>#ID</td>
-            <td>TYTUŁ</td>
-            <td>REGION</td>
-            <td>TXID</td>
-        </tr>
-
+        <div class="game-grid" id="gamesGrid">
         {% for gra in site.data.games %}
-        <tr data-tytul="{{ gra.tytul | downcase }}">
-            <td>{{ gra.id }}</td>
-            <td>
-                {{ gra.tytul }}
-                {% if gra.nowy %}<br><span class="blink" style="color:red; font-size:11px;">🆕 NOWOŚĆ!</span>{% endif %}
-            </td>
-            <td>{{ gra.region }}</td>
-            <td>
-                <span class="txid"
-                onclick="copyTX(this)"
-                data-full="{{ gra.txid }}">
-                {{ gra.txid | slice: 0, 9 }}..
-                </span>
-            </td>
-        </tr>
-        {% endfor %}
+        <div class="game-card {% unless gra.obrazek %}no-cover{% endunless %}" data-tytul="{{ gra.tytul | downcase }}"
+             {% if gra.obrazek %}style="background-image:url('{{ '/assets/gry/' | relative_url }}{{ gra.obrazek }}');"{% endif %}>
 
-        </table>
+            <span class="game-id">{{ gra.id }}</span>
+            <span class="game-region">{{ gra.region }}</span>
+            {% if gra.nowy %}<span class="game-new blink">🆕 NOWOŚĆ</span>{% endif %}
+
+            <div class="game-info">
+                <span class="game-title">{{ gra.tytul }}</span>
+                <span class="txid"
+                    onclick="copyTX(this)"
+                    data-full="{{ gra.txid }}">
+                    {{ gra.txid | slice: 0, 9 }}..
+                </span>
+            </div>
+        </div>
+        {% endfor %}
+        </div>
 
         <br>
 
