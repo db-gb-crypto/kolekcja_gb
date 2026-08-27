@@ -1,4 +1,3 @@
-
 function safe(v){return v??"-";}
 
 function escapeHTML(str){
@@ -266,10 +265,10 @@ fetch("https://countapi.mileshilliard.com/api/v1/hit/gbr-archiwum-blockchain")
 // ===== FILTR WYSZUKIWANIA GIER =====
 function filterGames(){
     const query = document.getElementById("gameSearch").value.toLowerCase();
-    const rows = document.querySelectorAll("#gamesTable tr[data-tytul]");
+    const cards = document.querySelectorAll("#gamesGrid .game-card[data-tytul]");
 
-    rows.forEach(row => {
-        const tytul = row.getAttribute("data-tytul");
-        row.style.display = tytul.includes(query) ? "" : "none";
+    cards.forEach(card => {
+        const tytul = card.getAttribute("data-tytul");
+        card.style.display = tytul.includes(query) ? "" : "none";
     });
 }
