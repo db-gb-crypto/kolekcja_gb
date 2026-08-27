@@ -1,7 +1,3 @@
-# PRZYKŁADOWE WPISY — podmień na swoje prawdziwe dane.
-# obrazek: nazwa pliku w assets/ff/ (zdjęcie okładki/pudełka gry)
-# txid: prawdziwy TXID z blockchain BSV (tak jak w games.yml) — po kliknięciu
-#       karta przenosi do index.html i automatycznie odpytuje blockchain o ten TXID.
 
 - id: FF-0001
   tytul: "Final Fantasy IV"
