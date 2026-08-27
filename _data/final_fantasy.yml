@@ -4,21 +4,16 @@
 #       karta przenosi do index.html i automatycznie odpytuje blockchain o ten TXID.
 
 - id: FF-0001
-  tytul: "Final Fantasy Amthology (IV-V)"
-  region: EUROPA
-  obrazek: "ffanthology.jpg"
+  tytul: "Final Fantasy IV"
+  region: JAPONIA
+  obrazek: "ff4.jpg"
 
 - id: FF-0002
-  tytul: "Final Fantasy Adventure"
+  tytul: "Final Fantasy VI"
   region: EUROPA
-  obrazek: "ff-adventure.jpg"
+  obrazek: "ff6.jpg"
 
 - id: FF-0003
-  tytul: "Final Fantasy Legend II"
-  region: USA
-  obrazek: "ff-legend2.jpg"
-
-- id: FF-0004
-  tytul: "Final Fantasy VII PC"
+  tytul: "Final Fantasy VII"
   region: EUROPA
-  obrazek: "ff-legend2.jpg"
+  obrazek: "ff7.jpg"
