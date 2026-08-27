@@ -829,3 +829,82 @@ button:active {
     0% { background-position: 0% 50%; }
     100% { background-position: 200% 50%; }
 }
+
+
+/* =====================================================
+   KOLEKCJA FINAL FANTASY — siatka kart 3 w rzędzie
+   ===================================================== */
+ 
+.ff-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 16px;
+}
+ 
+.ff-card {
+    position: relative;
+    display: block;
+    aspect-ratio: 3 / 4;
+    border: 3px solid var(--gb-green-2);
+    border-radius: 4px;
+    overflow: hidden;
+    text-decoration: none;
+ 
+    background-color: #111;
+    background-size: cover;
+    background-position: center;
+ 
+    box-shadow: 0 0 6px rgba(139,172,15,0.25);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+ 
+/* przyciemnienie od dołu, żeby tytuł był czytelny na dowolnym zdjęciu */
+.ff-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 45%, rgba(0,0,0,0.55) 75%, rgba(0,0,0,0.85) 100%);
+    pointer-events: none;
+}
+ 
+.ff-card:hover {
+    transform: translateY(-4px) scale(1.02);
+    border-color: var(--gb-green-3);
+    box-shadow: 0 0 18px rgba(139,172,15,0.55);
+}
+ 
+.ff-region {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    z-index: 1;
+    background: rgba(15,56,15,0.85);
+    color: var(--gb-green-4);
+    font-family: "VT323", "Courier New", monospace;
+    font-size: 14px;
+    padding: 2px 6px;
+    border: 1px solid var(--gb-green-3);
+    border-radius: 3px;
+}
+ 
+.ff-title {
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    z-index: 1;
+    color: #fff;
+    font-family: "VT323", "Courier New", monospace;
+    font-size: 20px;
+    line-height: 1.15;
+    text-shadow: 0 0 4px #000, 0 0 8px #000, 1px 1px 0 #000;
+}
+ 
+@media (max-width: 900px) {
+    .ff-grid { grid-template-columns: repeat(2, 1fr); }
+}
+ 
+@media (max-width: 500px) {
+    .ff-grid { grid-template-columns: 1fr; }
+}
