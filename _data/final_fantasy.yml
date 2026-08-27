@@ -17,3 +17,8 @@
   tytul: "Final Fantasy Legend II"
   region: USA
   obrazek: "ff-legend2.jpg"
+
+  - id: FF-0004
+  tytul: "Final Fantasy VII PC"
+  region: EUROPA
+  obrazek: "ff-legend2.jpg"
