@@ -1016,12 +1016,17 @@ button:active {
     right: 4px;
     z-index: 1;
     background: rgba(15,56,15,0.85);
-    color: var(--gb-green-4);
-    font-size: 16px;
-    line-height: 1;
     padding: 3px 5px;
     border: 1px solid var(--gb-green-3);
     border-radius: 3px;
+    line-height: 0;
+}
+
+.game-region .fi {
+    width: 20px;
+    line-height: 14px;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.4);
 }
 
 .game-new {
