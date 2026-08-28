@@ -1001,10 +1001,13 @@ button:active {
     top: 4px;
     left: 4px;
     z-index: 1;
-    color: #fff;
+    background: rgba(15,56,15,0.85);
+    color: var(--gb-green-4);
     font-family: "VT323", "Courier New", monospace;
     font-size: 13px;
-    text-shadow: 0 0 4px #000, 1px 1px 0 #000;
+    padding: 2px 6px;
+    border: 1px solid var(--gb-green-3);
+    border-radius: 3px;
 }
 
 .game-region {
@@ -1015,8 +1018,8 @@ button:active {
     background: rgba(15,56,15,0.85);
     color: var(--gb-green-4);
     font-family: "VT323", "Courier New", monospace;
-    font-size: 11px;
-    padding: 1px 4px;
+    font-size: 14px;
+    padding: 2px 6px;
     border: 1px solid var(--gb-green-3);
     border-radius: 3px;
 }
@@ -1056,6 +1059,37 @@ button:active {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+.game-card .accent-line {
+    position: absolute;
+    top: 6%;
+    bottom: 6%;
+    width: 2px;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(255,255,255,0.9) 45%,
+        rgba(255,255,255,0.9) 55%,
+        transparent 100%
+    );
+    box-shadow:
+        0 0 6px 1px rgba(255,255,255,0.55),
+        -3px 0 8px 1px rgba(139,172,15,0.35);
+    filter: blur(0.6px);
+}
+
+.game-card .accent-line.left {
+    left: 45.5%;
+}
+
+.game-card .accent-line.right {
+    right: 45.5%;
+    box-shadow:
+        0 0 6px 1px rgba(255,255,255,0.55),
+        3px 0 8px 1px rgba(139,172,15,0.35);
 }
 
 .game-card .txid {
