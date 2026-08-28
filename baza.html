@@ -22,10 +22,8 @@ layout: default
              {% if gra.obrazek %}style="background-image:url('{{ '/assets/gry/' | relative_url }}{{ gra.obrazek }}');"{% endif %}>
 
             <span class="game-id">{{ gra.id }}</span>
-            <span class="game-region">{{ gra.region }}</span>
+            <span class="game-region">{{ site.data.flags[gra.region] | default: gra.region }}</span>
             {% if gra.nowy %}<span class="game-new blink">🆕 NOWOŚĆ</span>{% endif %}
-            <div class="accent-line left"></div>
-            <div class="accent-line right"></div>
 
             <div class="game-info">
                 <span class="game-title">{{ gra.tytul }}</span>
