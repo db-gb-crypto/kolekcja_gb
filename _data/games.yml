@@ -50,21 +50,25 @@
   tytul: "Shadowgate Classic"
   region: EUROPA
   txid: "3e50593217c9815b24f55fa1d9905bd9cfba8c5ce6f8ddb4d7c57eed82b1a63c"
+  obrazek: "gbr0009.jpg"
 
 - id: GBR-0010
   tytul: "Monopoly"
   region: USA
   txid: "2b931a4591fe08c251560e23a08ea1d693328dd68959657479f38be07cb321ec"
+  obrazek: "gbr0010.jpg"
 
 - id: GBR-0011
   tytul: "The Simpson's Bart vs. The Juggernauts"
   region: USA
   txid: "fd1c351fbcca54d4b25c1f52ebe61c2f68c99a10857b670b89d51adea384650b"
+  obrazek: "gbr0011.jpg"
 
 - id: GBR-0012
   tytul: "Qix"
   region: USA
   txid: "f41cbd0ebb01e03ed0fa8b0a408a2681284026759e4b082fa12ef917be80bb0d"
+  obrazek: "gbr0012.jpg"
 
 - id: GBR-0013
   tytul: "Super Mario Land"
