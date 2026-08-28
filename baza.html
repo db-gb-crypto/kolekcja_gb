@@ -10,7 +10,7 @@ layout: default
         ==========================================
            SYSTEM: GAME BOY / GB CLASSIC
            TRYB: ARCHIWUM KOLEKCJI
-           OSTATNIA AKTUALIZACJA: 2026-08-28
+           OSTATNIA AKTUALIZACJA: 2026-07-25
         ==========================================
         </pre>
 
@@ -22,7 +22,7 @@ layout: default
              {% if gra.obrazek %}style="background-image:url('{{ '/assets/gry/' | relative_url }}{{ gra.obrazek }}');"{% endif %}>
 
             <span class="game-id">{{ gra.id }}</span>
-            <span class="game-region">{{ site.data.flags[gra.region] | default: gra.region }}</span>
+            <span class="game-region"><span class="fi fi-{{ site.data.flags[gra.region] | default: 'xx' }}"></span></span>
             {% if gra.nowy %}<span class="game-new blink">🆕 NOWOŚĆ</span>{% endif %}
 
             <div class="game-info">
