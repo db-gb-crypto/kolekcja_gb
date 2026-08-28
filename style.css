@@ -1063,33 +1063,33 @@ button:active {
 
 .game-card .accent-line {
     position: absolute;
-    top: 6%;
-    bottom: 6%;
-    width: 2px;
+    top: 8%;
+    bottom: 8%;
+    width: 1px;
     z-index: 1;
     pointer-events: none;
     background: linear-gradient(
         to bottom,
         transparent 0%,
-        rgba(255,255,255,0.9) 45%,
-        rgba(255,255,255,0.9) 55%,
+        rgba(255,255,255,0.5) 45%,
+        rgba(255,255,255,0.5) 55%,
         transparent 100%
     );
     box-shadow:
-        0 0 6px 1px rgba(255,255,255,0.55),
-        -3px 0 8px 1px rgba(139,172,15,0.35);
-    filter: blur(0.6px);
+        0 0 3px 0.5px rgba(255,255,255,0.3),
+        -1px 0 4px 0.5px rgba(139,172,15,0.2);
+    filter: blur(0.4px);
 }
 
 .game-card .accent-line.left {
-    left: 45.5%;
+    left: 8%;
 }
 
 .game-card .accent-line.right {
-    right: 45.5%;
+    right: 8%;
     box-shadow:
-        0 0 6px 1px rgba(255,255,255,0.55),
-        3px 0 8px 1px rgba(139,172,15,0.35);
+        0 0 3px 0.5px rgba(255,255,255,0.3),
+        1px 0 4px 0.5px rgba(139,172,15,0.2);
 }
 
 .game-card .txid {
