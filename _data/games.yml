@@ -80,16 +80,19 @@
   tytul: "Pokemon Gelbe Edition"
   region: EUROPA
   txid: "0ff9a114ce06dcac53fe0059612ebed62393670fe5faee3d1063f636585c5fb8"
+  obrazek: "gbr0014.jpg"
 
 - id: GBR-0015
   tytul: "Dr. Mario"
   region: EUROPA
   txid: "3a9a0abaab7a888e1626e2266038eb7555e1f96838e0fb9d427be37512d0a9bb"
+  obrazek: "gbr0015.jpg"
 
 - id: GBR-0016
   tytul: "Solar Striker"
   region: EUROPA
   txid: "e76c39958dcee4c80dcff68ae635efeb740a0de648152f377523ac7d8db0b922"
+  obrazek: "gbr0016.jpg"
 
 - id: GBR-0017
   tytul: "Bust-a-move 2"
