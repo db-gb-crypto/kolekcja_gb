@@ -945,7 +945,7 @@ button:active {
     background-position: center;
 
     box-shadow: 0 0 5px rgba(139,172,15,0.2);
-    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, filter 0.15s ease;
 }
 
 /* karty bez zdjęcia — wyglądają jak ekran LCD (tak jak hack.html) zamiast pustego kafelka */
@@ -983,6 +983,7 @@ button:active {
         rgba(0,0,0,0.92) 100%
     );
     pointer-events: none;
+    transition: opacity 0.15s ease;
 }
 
 .game-card.no-cover::before {
@@ -993,7 +994,12 @@ button:active {
     transform: translateY(-3px) scale(1.02);
     border-color: var(--gb-green-3);
     box-shadow: 0 0 14px rgba(139,172,15,0.5);
+    filter: brightness(1.18);
     z-index: 2;
+}
+
+.game-card:hover::before {
+    opacity: 0.55;
 }
 
 .game-id {
