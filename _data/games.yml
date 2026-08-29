@@ -122,26 +122,31 @@
   tytul: "Disney's Duck Tales"
   region: EUROPA
   txid: "3ca181aa580c9a7fec651e233b9d47cb1185c90b12d037dbdd8bff0699ca87d4"
+  obrazek: "gbr0021.jpg"
 
 - id: GBR-0022
-  tytul: "The Jungle Book"
+  tytul: "Disney's The Jungle Book"
   region: EUROPA
   txid: "373e0573ddc4fa2c072bb6a6858598705733c5f04aeea4e835b4a56261dc2f47"
+  obrazek: "gbr0022.jpg"
 
 - id: GBR-0023
   tytul: "Tetris"
   region: EUROPA
   txid: "b06d139f59a2aebd0f9f110493f36694cb7ad7685713492c0e84e25fe2ef4178"
+  obrazek: "gbr0023.jpg"
 
 - id: GBR-0024
   tytul: "Oddworld Adventures 2"
   region: EUROPA
   txid: "387e28e9857a7819eae1e37fda4f54c7827711840bdcfd31b6cfa8a959d660cd"
+  obrazek: "gbr0024.jpg"
 
 - id: GBR-0025
-  tytul: "The Lion King"
+  tytul: "Disney's The Lion King"
   region: EUROPA
   txid: "3f291879a873bdc8174e0d765d41a7c567ac6761a820ab4ec7a389dde3e7bbd8"
+  obrazek: "gbr0025.jpg"
 
 - id: GBR-0026
   tytul: "Donkey Kong Land 3"
