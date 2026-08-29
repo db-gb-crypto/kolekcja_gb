@@ -104,16 +104,19 @@
   tytul: "True Lies"
   region: EUROPA
   txid: "409afecdf7c097691312296d4e86c9f0eeaaddf4300cc4fb42e093ae16167ec8"
+  obrazek: "gbr0018.jpg"
 
 - id: GBR-0019
   tytul: "Hugo 2 1/2"
   region: EUROPA
   txid: "61bffd6c12ce099233ab57056da101d62426bf6f7fbd502a5eeca5085f8e4246"
+  obrazek: "gbr0019.jpg"
 
 - id: GBR-0020
   tytul: "Donkey Kong Land"
   region: EUROPA
   txid: "ff103b3c1e142000f824bb0db0884ae62a5f0654621b6c5c44f879669c4f2e1e"
+  obrazek: "gbr0020.jpg"
 
 - id: GBR-0021
   tytul: "Disney's Duck Tales"
