@@ -3,25 +3,28 @@
   region: EUROPA
   txid: "ba4476fda44823eabb960f9f1a0efbec56eea7c477d9deea20a468d4cb91bc5a"
   obrazek: "gbr0001.jpg"
-  opis: "Gra zakupiona w Białymstoku 'od ręki', przyjechała z Niemiec. Chłopak, który ją sprzedawał powiedział, że nawet w nia nie grał i dostał grę od taty by ją sprzedać."
+  opis: "Gra zakupiona w Białymstoku 'od ręki'. Do Polski przyjechała z Niemiec. Sprzedający dostał grę od ojca, który kupił kilka gier na odsprzedaż. To pierwsza gra w kolekcji :) "
 
 - id: GBR-0002
   tytul: "Mario & Yoshi"
   region: EUROPA
   txid: "39d2cf7cf34788d51e54b1fcfad27148d19a158e0f52c210cc1b0755b19a5e0c"
   obrazek: "gbr0002.jpg"
+  opis: "Gra zakupiona w Polsce, na portalu olx od kobiety, która osprzedawała zawartość pokoju po dorosłych dzieciach."
 
 - id: GBR-0003
   tytul: "The Bugs Bunny Crazy Castle"
   region: EUROPA
   txid: "0a65e1bad8b07479019e5fc36db95b9c25228eea266d9963d14727196f3be635"
   obrazek: "gbr0003.jpg"
+  opis: "Gra zakupiona w Polsce, na portalu olx."
 
 - id: GBR-0004
   tytul: "Tennis"
   region: EUROPA
   txid: "1a53c5b5457dcbed91729f4894dff6840c0bc220bc84484d3aa8172d1d72d3b2"
   obrazek: "gbr0004.jpg"
+  opis: "Gra zakupiona w Polsce, na portalu olx."
 
 - id: GBR-0005
   tytul: "Olympic Summer Games"
