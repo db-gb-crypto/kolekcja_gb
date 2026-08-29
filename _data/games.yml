@@ -3,6 +3,7 @@
   region: EUROPA
   txid: "ba4476fda44823eabb960f9f1a0efbec56eea7c477d9deea20a468d4cb91bc5a"
   obrazek: "gbr0001.jpg"
+  opis: "Gra zakupiona w Białymstoku 'od ręki', przyjechała z Niemiec. Chłopak, który ją sprzedawał powiedział, że nawet w nia nie grał i dostał grę od taty by ją sprzedać.
 
 - id: GBR-0002
   tytul: "Mario & Yoshi"
@@ -188,16 +189,19 @@
   tytul: "Othello"
   region: EUROPA
   txid: "2a82648dd63af70a3cc16745c42fbbdbb0be6f9c40f61e41fd0c87f5b81faaf3"
+  obrazek: "gbr0032.jpg"
 
 - id: GBR-0033
   tytul: "Kirby's Pinball Land"
   region: EUROPA
   txid: "4fa099a1614085e2504519be9465d1ac6a54f5a09fc0bcf6b72f148b52ad3d3c"
+  obrazek: "gbr0033.jpg"
 
 - id: GBR-0034
   tytul: "Soccer"
   region: EUROPA
   txid: "75d91d92bc5b3b5e9973d017a8f9dd1346736f4dbea0ed079ff3f1088cd04723"
+  obrazek: "gbr0034.jpg"
 
 - id: GBR-0035
   tytul: "Glucksrad"

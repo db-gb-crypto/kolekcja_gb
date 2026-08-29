@@ -941,15 +941,23 @@ button:active {
     overflow: hidden;
 
     background-color: #111;
-    background-size: cover;
-    background-position: center;
 
     box-shadow: 0 0 5px rgba(139,172,15,0.2);
     transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, filter 0.15s ease;
 }
 
+.game-cover {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-color: #111;
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.35s ease, transform 0.35s ease;
+}
+
 /* karty bez zdjęcia — wyglądają jak ekran LCD (tak jak hack.html) zamiast pustego kafelka */
-.game-card.no-cover {
+.game-card.no-cover .game-cover {
     background-color: var(--gb-green-4);
     background-image:
         repeating-linear-gradient(0deg, rgba(15,56,15,0.10) 0px, rgba(15,56,15,0.10) 1px, transparent 1px, transparent 3px),
@@ -972,6 +980,7 @@ button:active {
     content: "";
     position: absolute;
     inset: 0;
+    z-index: 1;
     background: linear-gradient(
         180deg,
         rgba(0,0,0,0.85) 0%,
@@ -1006,7 +1015,7 @@ button:active {
     position: absolute;
     top: 4px;
     left: 4px;
-    z-index: 1;
+    z-index: 2;
     background: rgba(15,56,15,0.85);
     color: var(--gb-green-4);
     font-family: "VT323", "Courier New", monospace;
@@ -1020,7 +1029,7 @@ button:active {
     position: absolute;
     top: 4px;
     right: 4px;
-    z-index: 1;
+    z-index: 2;
     background: rgba(15,56,15,0.85);
     padding: 3px 5px;
     border: 1px solid var(--gb-green-3);
@@ -1039,7 +1048,7 @@ button:active {
     position: absolute;
     top: 24px;
     right: 4px;
-    z-index: 1;
+    z-index: 2;
     color: red;
     font-size: 10px;
     font-family: "VT323", "Courier New", monospace;
@@ -1051,7 +1060,7 @@ button:active {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 2;
     padding: 5px 6px;
     background: rgba(0,0,0,0.7);
     display: flex;
@@ -1137,4 +1146,79 @@ button:active {
 .sys-info-row .value {
     color: var(--gb-green-4);
     text-shadow: 0 0 5px rgba(139,172,15,0.5);
+}
+
+
+/* =====================================================
+   OPIS GRY PO KLIKNIĘCIU — mgła + wyłaniający się tekst
+   ===================================================== */
+
+/* karty z opisem sygnalizują, że można kliknąć */
+.game-card[onclick] {
+    cursor: pointer;
+}
+
+/* stan po kliknięciu: zdjęcie rozmyte i przyciemnione */
+.game-card.flipped .game-cover {
+    filter: blur(9px) brightness(0.45) saturate(0.8);
+    transform: scale(1.12); /* zapas, żeby rozmyte krawędzie nie odsłoniły ramki */
+}
+
+.game-card.flipped::before {
+    opacity: 0.25;
+}
+
+/* reszta odznak (ID/region/nowość) lekko gaśnie, żeby nie odciągać uwagi od opisu */
+.game-card.flipped .game-id,
+.game-card.flipped .game-region,
+.game-card.flipped .game-new {
+    opacity: 0.35;
+    transition: opacity 0.3s ease;
+}
+
+.game-desc {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 16px 14px;
+    text-align: center;
+
+    opacity: 0;
+    transform: scale(0.85);
+    filter: blur(4px);
+    pointer-events: none;
+    transition: opacity 0.35s ease, transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.35s ease;
+}
+
+.game-card.flipped .game-desc {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0px);
+    pointer-events: auto;
+    transition-delay: 0.08s;
+}
+
+.game-desc-label {
+    font-family: "VT323", "Courier New", monospace;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: var(--gb-green-3);
+    text-shadow: 0 0 6px rgba(139,172,15,0.6);
+}
+
+.game-desc p {
+    margin: 0;
+    font-family: "VT323", "Courier New", monospace;
+    font-size: 15px;
+    line-height: 1.35;
+    color: #fff;
+    text-shadow: 0 0 6px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,1);
+
+    max-height: 100%;
+    overflow-y: auto;
 }

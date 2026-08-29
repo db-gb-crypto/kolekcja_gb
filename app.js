@@ -262,6 +262,11 @@ fetch("https://countapi.mileshilliard.com/api/v1/hit/gbr-archiwum-blockchain")
         if(counterEl) counterEl.textContent = "??????";
     });
 
+// ===== OPIS GRY PO KLIKNIĘCIU (mgła + tekst) =====
+function toggleGameDesc(card){
+    card.classList.toggle("flipped");
+}
+
 // ===== FILTR WYSZUKIWANIA GIER =====
 function filterGames(){
     const query = document.getElementById("gameSearch").value.toLowerCase();

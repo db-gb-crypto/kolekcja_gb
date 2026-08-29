@@ -4,6 +4,8 @@ layout: default
 <div id="output" class="output">
     <section class="box gb-info">
         <b>📀 BAZA GIEREK GAME BOY (ARCHIWUM)</b>
+        <br><br>
+
         <div class="sys-info">
             <div class="sys-info-title">◆ INFO SYSTEMU ◆</div>
             <div class="sys-info-row"><span class="label">SYSTEM</span><span class="value">GAME BOY / GB CLASSIC</span></div>
@@ -16,7 +18,9 @@ layout: default
         <div class="game-grid" id="gamesGrid">
         {% for gra in site.data.games %}
         <div class="game-card {% unless gra.obrazek %}no-cover{% endunless %}" data-tytul="{{ gra.tytul | downcase }}"
-             {% if gra.obrazek %}style="background-image:url('{{ '/assets/gry/' | relative_url }}{{ gra.obrazek }}');"{% endif %}>
+             {% if gra.opis %}onclick="toggleGameDesc(this)"{% endif %}>
+
+            <div class="game-cover" {% if gra.obrazek %}style="background-image:url('{{ '/assets/gry/' | relative_url }}{{ gra.obrazek }}');"{% endif %}></div>
 
             <span class="game-id">{{ gra.id }}</span>
             <span class="game-region"><span class="fi fi-{{ site.data.flags[gra.region] | default: 'xx' }}"></span></span>
@@ -25,11 +29,18 @@ layout: default
             <div class="game-info">
                 <span class="game-title">{{ gra.tytul }}</span>
                 <span class="txid"
-                    onclick="copyTX(this)"
+                    onclick="event.stopPropagation(); copyTX(this)"
                     data-full="{{ gra.txid }}">
                     {{ gra.txid | slice: 0, 9 }}..
                 </span>
             </div>
+
+            {% if gra.opis %}
+            <div class="game-desc">
+                <span class="game-desc-label">&gt; OPIS</span>
+                <p>{{ gra.opis }}</p>
+            </div>
+            {% endif %}
         </div>
         {% endfor %}
         </div>
