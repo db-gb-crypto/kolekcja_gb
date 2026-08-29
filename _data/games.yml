@@ -152,21 +152,25 @@
   tytul: "Donkey Kong Land 3"
   region: EUROPA
   txid: "dcaa3a8b0eebcbda7b29d9d96aafad3713448b67a7bcd7282504cd6fd1b9b942"
+  obrazek: "gbr0026.jpg"
 
 - id: GBR-0027
   tytul: "Soccer"
   region: EUROPA
   txid: "e3c4a3f9cf145c95fd76be9f1bd08010f9781cf7f4377f7d27f21adc5499f394"
+  obrazek: "gbr0027.jpg"
 
 - id: GBR-0028
   tytul: "Wizards & Warriors X: Fortress of Fear"
   region: EUROPA
   txid: "5c82a213292e4f04a01ea7891cfb8b30649df4016fbc8b6b1a60fc6736733aa0"
+  obrazek: "gbr0028.jpg"
 
 - id: GBR-0029
   tytul: "Golf"
   region: EUROPA
   txid: "f6abfdec6b3605e159f12b10a44e26864cabe1968ab0bee4d4aa5fc523cf0cc9"
+  obrazek: "gbr0029.jpg"
 
 - id: GBR-0030
   tytul: "Boulder Dash"
