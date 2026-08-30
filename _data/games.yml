@@ -234,11 +234,13 @@
   tytul: "Boxxle"
   region: EUROPA
   txid: "32f307283f60325b328e12c804d6883e8fcd4fbfba08e9c603e6f75a404c861c"
+  obrazek: "gbr0039.jpg"
 
 - id: GBR-0040
   tytul: "Donkey Kong Land 2"
   region: EUROPA
   txid: "d3aaf028dedba9917bd36e489e460d2b44ba2b025167d7d37786638772410a7f"
+  obrazek: "gbr0040.jpg"
 
 - id: GBR-0041
   tytul: "Tetris DX"
