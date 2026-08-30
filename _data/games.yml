@@ -216,16 +216,19 @@
   tytul: "NBA Jam"
   region: EUROPA
   txid: "fcc75e97db7c192a393539c2a146fb9fac486754ae30d8ed7525ba0c104ba84b"
+  obrazek: "gbr0036.jpg"
 
 - id: GBR-0037
   tytul: "Quest for Camelot"
   region: EUROPA
   txid: "b513eb4d62da5b0c8135d4e592748c92674ed81fd911106f56ac01ae20beb60a"
+  obrazek: "gbr0037.jpg"
 
 - id: GBR-0038
   tytul: "Alleyway"
   region: EUROPA
   txid: "8e8b376a38e126bbec0dea79874d00f27a724396c39ab4e62de66ac3709536f2"
+  obrazek: "gbr0038.jpg"
 
 - id: GBR-0039
   tytul: "Boxxle"
