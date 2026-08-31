@@ -324,56 +324,67 @@
   tytul: "Mole Mania"
   region: EUROPA
   txid: "b9f568d3a44a87605e1fe2a925a13d190991d9d4103d4a5cf7c641a68398a542"
+  obrazek: "gbr0052.jpg"
 
 - id: GBR-0053
   tytul: "Kirby's Dream Land"
   region: EUROPA
   txid: "97832c25a6d1eac5385dcb8d49916fba6f5f8e36247d8845280e378c455bb448"
+  obrazek: "gbr0053.jpg"
 
 - id: GBR-0054
   tytul: "Pachinko Time"
   region: JP
   txid: "2bce0eeb245d8947d355f7ff4cca0515fe68e09756c9b0a65b9b2aa8ecb1da6c"
+  obrazek: "gbr0054.jpg"
 
 - id: GBR-0055
   tytul: "Yakuman"
   region: JP
   txid: "2fb55363e90af054fd58526559abaa0cbd384d280d0948dc8ea9810d8d4409ce"
+  obrazek: "gbr0055.jpg"
 
 - id: GBR-0056
   tytul: "The Flintstones"
   region: USA
   txid: "5f80230fe7f4b49bbfcc4c08e9431b8b288f0a486694891e7c3d706e4ce4d73e"
+  obrazek: "gbr0056.jpg"
 
 - id: GBR-0057
   tytul: "Arcade Classic 1: Asteroids / Missile Command"
   region: EUROPA
   txid: "610488fceedd8072f9e1a335fa85ae4af2eb29da2b223aebb5434f647c7b7ec9"
+  obrazek: "gbr0057.jpg"
 
 - id: GBR-0058
   tytul: "Nekketsu Kōkō Soccer-bu: World Cup-hen"
   region: JP
   txid: "dc5aaf7b2062b6449d5bcd7c844e52db75addc8c5040f44d93d15de4fdbd7a1c"
+  obrazek: "gbr0058.jpg"
 
 - id: GBR-0059
   tytul: "The Legend of Zelda: Link's Awakening"
   region: EUROPA
   txid: "33d147604fad639cb39945ec22847875518e3f08b80c32ad8ccfde109c6ded7f"
+  obrazek: "gbr0059.jpg"
 
 - id: GBR-0060
   tytul: "Double Dragon II"
   region: USA
   txid: "e76a4dce73cc1ca361eb0d672ea88bba8501f275462974a14b54f86efd15adea"
+  obrazek: "gbr0060.jpg"
 
 - id: GBR-0061
   tytul: "Daffy Duck"
   region: EUROPA
   txid: "6d936bfcdcad445cc72909622eba6727c3806d0543591d87bb0f2d939900f09c"
+  obrazek: "gbr0061.jpg"
 
 - id: GBR-0062
   tytul: "NFL Quarterback Club II"
   region: EUROPA
   txid: "aa5a642dc84c3d4cd0323168e7e83e8b2a0536a450f8a159c24a86c32355030a"
+  obrazek: "gbr0062.jpg"
 
 - id: GBR-0063
   tytul: "Pierre le Chef is... Out to Lunch"
