@@ -17,32 +17,35 @@
   region: EUROPA
   txid: "0a65e1bad8b07479019e5fc36db95b9c25228eea266d9963d14727196f3be635"
   obrazek: "gbr0003.jpg"
-  opis: "Gra zakupiona w Polsce, na portalu olx."
+  opis: "Gra zakupiona w Polsce, na portalu olx od użytkownika Adrian."
 
 - id: GBR-0004
   tytul: "Tennis"
   region: EUROPA
   txid: "1a53c5b5457dcbed91729f4894dff6840c0bc220bc84484d3aa8172d1d72d3b2"
   obrazek: "gbr0004.jpg"
-  opis: "Gra zakupiona w Polsce, na portalu olx."
+  opis: "Gra zakupiona w Polsce, na portalu olx od użytkownika Sebastian Lis RetroSpec."
 
 - id: GBR-0005
   tytul: "Olympic Summer Games"
   region: EUROPA
   txid: "9ac6ba14505225ed5b44ea225c936c84f0962593b27e8f09621f32e892723179"
   obrazek: "gbr0005.jpg"
+  opis: "Gra zakupiona w Polsce, na portalu olx od użytkownika Michał."
 
 - id: GBR-0006
   tytul: "Burai Fighter Deluxe"
   region: EUROPA
   txid: "dd5fbe0830a0d8a6f032c38e62ccc9ad1d08cff5a46d45d5754c78bd95004c06"
   obrazek: "gbr0006.jpg"
+  opis: "Gra zakupiona w Polsce, na portalu olx (razem z F1 Race) od użytkownika Michał."
 
 - id: GBR-0007
   tytul: "F1 Race"
   region: EUROPA
   txid: "3dfd57decb260eec290efa051729e9e404aa06dbb8444524db6ef5555eff229e"
   obrazek: "gbr0007.jpg"
+  opis: "Gra zakupiona w Polsce, na portalu olx (razem z Burai Fighter Deluxe) od użytkownika Michał."
 
 - id: GBR-0008
   tytul: "Game Boy Gallery 5in1"
@@ -55,6 +58,7 @@
   region: EUROPA
   txid: "3e50593217c9815b24f55fa1d9905bd9cfba8c5ce6f8ddb4d7c57eed82b1a63c"
   obrazek: "gbr0009.jpg"
+  opis: "Gra zakupiona w Polsce, na portalu olx od użytkownika Tomasz."
 
 - id: GBR-0010
   tytul: "Monopoly"
@@ -79,6 +83,7 @@
   region: JP
   txid: "8994dcf647212f4a10a25358728ddbd2304434655dcf3a2af38cb5b0cec457db"
   obrazek: "gbr0013.jpg"
+  opis: "Gra zakupiona w Polsce, na portalu olx od użytkownika michmichalewski."
 
 - id: GBR-0014
   tytul: "Pokemon Gelbe Edition"
@@ -145,6 +150,7 @@
   region: EUROPA
   txid: "387e28e9857a7819eae1e37fda4f54c7827711840bdcfd31b6cfa8a959d660cd"
   obrazek: "gbr0024.jpg"
+  opis: "Gra zakupiona w Polsce, na portalu olx od użytkownika Luk1."
 
 - id: GBR-0025
   tytul: "Disney's The Lion King"
@@ -157,6 +163,7 @@
   region: EUROPA
   txid: "dcaa3a8b0eebcbda7b29d9d96aafad3713448b67a7bcd7282504cd6fd1b9b942"
   obrazek: "gbr0026.jpg"
+  opis: "Gra zakupiona w Polsce, na portalu olx od użytkownika Dawid."
 
 - id: GBR-0027
   tytul: "Soccer"
@@ -187,6 +194,7 @@
   region: EUROPA
   txid: "5cdabe3abca75ed9fec5535e005d315eb6973fc990ef60e2320dd69f25894fbd"
   obrazek: "gbr0031.jpg"
+  opis: "Gra zakupiona w Polsce, na portalu olx od użytkownika slaweksz2426."
 
 - id: GBR-0032
   tytul: "Othello"
@@ -199,6 +207,7 @@
   region: EUROPA
   txid: "4fa099a1614085e2504519be9465d1ac6a54f5a09fc0bcf6b72f148b52ad3d3c"
   obrazek: "gbr0033.jpg"
+  opis: "Gra zakupiona w Polsce, na portalu olx od użytkownika dorotaoc33."
 
 - id: GBR-0034
   tytul: "Soccer"
@@ -223,6 +232,7 @@
   region: EUROPA
   txid: "b513eb4d62da5b0c8135d4e592748c92674ed81fd911106f56ac01ae20beb60a"
   obrazek: "gbr0037.jpg"
+  opis: "Gra zakupiona w Polsce, na portalu olx od użytkownika Zbigniew."
 
 - id: GBR-0038
   tytul: "Alleyway"
@@ -241,6 +251,7 @@
   region: EUROPA
   txid: "d3aaf028dedba9917bd36e489e460d2b44ba2b025167d7d37786638772410a7f"
   obrazek: "gbr0040.jpg"
+  opis: "Gra zakupiona w Polsce, na portalu olx od użytkownika Paweł."
 
 - id: GBR-0041
   tytul: "Tetris DX"
@@ -271,6 +282,7 @@
   region: EUROPA
   txid: "b0a759c4adf813723668ff4b45b7e318737a11c33258c075316e5182cecf4cfc"
   obrazek: "gbr0045.jpg"
+  opis: "Gra zakupiona w Polsce, na portalu olx od użytkownika MrLucky Łukasz Armada."
 
 - id: GBR-0046
   tytul: "The Smurfs"
