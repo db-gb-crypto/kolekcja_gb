@@ -246,56 +246,67 @@
   tytul: "Tetris DX"
   region: EUROPA
   txid: "622614bd2c704e47a8d38087c587fcd0b64483681535696f677a1f528213b78d"
+  obrazek: "gbr0041.jpg"
 
 - id: GBR-0042
   tytul: "Marble Madness"
   region: EUROPA
   txid: "9c4aba4dec8d7c76cc35b36cabaaca609d93259e5e80afdf1480235d2cd9b2d7"
+  obrazek: "gbr0042.jpg"
 
 - id: GBR-0043
   tytul: "Lucky Luke"
   region: EUROPA
   txid: "748291eae009992d01b092426390c37b534b4b8a7d37f947fadb20f5f5ff4b03"
+  obrazek: "gbr0043.jpg"
 
 - id: GBR-0044
   tytul: "The Incredible Crash Dummies"
   region: EUROPA
   txid: "c805a4e20870d485afb8718a24a31394068074e124f8ca8a56e378304f9a285f"
+  obrazek: "gbr0044.jpg"
 
 - id: GBR-0045
   tytul: "Tetris Attack"
   region: EUROPA
   txid: "b0a759c4adf813723668ff4b45b7e318737a11c33258c075316e5182cecf4cfc"
+  obrazek: "gbr0045.jpg"
 
 - id: GBR-0046
   tytul: "The Smurfs"
   region: EUROPA
   txid: "959e1ac6cf5c0fb89f453591d8882801dc5c8eb6820f64b270702a931fb41e37"
+  obrazek: "gbr0046.jpg"
 
 - id: GBR-0047
   tytul: "Casper"
   region: EUROPA
   txid: "aa685838aa25816a61b52c3b7f27d72f9ef6aecd31915f8d87ba4ff672fd5a3f"
+  obrazek: "gbr0047.jpg"
 
 - id: GBR-0048
   tytul: "Double Dragon"
   region: EUROPA
   txid: "36d801bdd435ff43b8a511d5786f68425c506f2582f1a96c66890182da4d5971"
+  obrazek: "gbr0048.jpg"
 
 - id: GBR-0049
   tytul: "Adventure Island II"
   region: EUROPA
   txid: "3cc450f4cba01f3785175ae748e7034f3fb0022cdf2c31bc09a68b0086ef5614"
+  obrazek: "gbr0049.jpg"
 
 - id: GBR-0050
   tytul: "Donkey Kong"
   region: EUROPA
   txid: "1ab8b02df4bc3e611e53683737fed279e866ced9c1c07b35239efa3995068698"
+  obrazek: "gbr0050.jpg"
 
 - id: GBR-0051
   tytul: "Hyper Lode Runner"
   region: EUROPA
   txid: "e551c01c501216066666473f482819f1de7e672613011474c7131390711c805d"
+  obrazek: "gbr0051.jpg"
 
 - id: GBR-0052
   tytul: "Mole Mania"
