@@ -450,41 +450,49 @@
   tytul: "Revenge of the 'Gator"
   region: EUROPA
   txid: "5b7ba3d8bef9a60ba16f57893a0eca1130c4ada399b7c227932a18fbfe8cb5a4"
+  obrazek: "gbr0073.jpg"
 
 - id: GBR-0074
   tytul: "Nemesis"
   region: JP
   txid: "c7a60d0619ca8bbd0b8535a1f6d479d5bf6f90847c64e35dfefe7483243a8a48"
+  obrazek: "gbr0074.jpg"
 
 - id: GBR-0075
   tytul: "Bubble Bobble"
   region: JP
   txid: "a06852257d1d3661c6821b313e935796e7bf69bd3737a088dc020501179a0923"
+  obrazek: "gbr0075.jpg"
 
 - id: GBR-0076
   tytul: "Mystic Quest"
   region: EUROPA
   txid: "674d2af715e73d2589f8c3a75f123de969b992d9ee6728d29cf79bd5bd3f2ccd"
+  obrazek: "gbr0076.jpg"
 
 - id: GBR-0077
   tytul: "Peke to Poko no Daruman Busters"
   region: JP
   txid: "8417aa018acc87825017a92397ba272324469ac2186fdcd97bcb057664822c7c"
+  obrazek: "gbr0077.jpg"
 
 - id: GBR-0078
   tytul: "Disney's The Little Mermaid"
   region: EUROPA
   txid: "7047d41f82d4001c36a6df8e690d11787aab601ba3091745135a2313080ef915"
+  obrazek: "gbr0078.jpg"
 
 - id: GBR-0079
   tytul: "Metroid II: Return of Samus"
   region: EUROPA
   txid: "58a3dc024837e6f31b65dc554b60017eef32ea6902dcff33b51f0502188f0c1e"
+  obrazek: "gbr0079.jpg"
 
 - id: GBR-0080
   tytul: "V-Rally: Championship Edition"
   region: EUROPA
   txid: "dc09e926401318367c146df5beace48c5f5f1c2f084619383d2a3ef30d9c2363"
+  obrazek: "gbr0080.jpg"
 
 - id: GBR-0081
   tytul: "NHL 96"
