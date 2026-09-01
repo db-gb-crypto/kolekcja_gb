@@ -390,51 +390,61 @@
   tytul: "Pierre le Chef is... Out to Lunch"
   region: EUROPA
   txid: "c661cc12f45e09239e5f41d9b00a8599758943a194a7c9b5a313bdef325024de"
+  obrazek: "gbr0063.jpg"
 
 - id: GBR-0064
   tytul: "Hugo"
   region: EUROPA
   txid: "d2392e46eafd98a73310384bd7ccc262fab508e96cdd976e2da14f8afe8af59f"
+  obrazek: "gbr0064.jpg"
 
 - id: GBR-0065
   tytul: "Hugo 2"
   region: EUROPA
   txid: "4469c6d80e74f26bc4102e771d02dfb607a312f6304d34d0d5b10b3338cac822"
+  obrazek: "gbr0065.jpg"
 
 - id: GBR-0066
   tytul: "Disney's DuckTales 2"
   region: EUROPA
   txid: "873e2ea2b8035ced9e428bbdd5433680750ca99b64e95529bf91951196c55ace"
+  obrazek: "gbr0066.jpg"
 
 - id: GBR-0067
   tytul: "Wario Land: Super Mario Land 3"
   region: EUROPA
   txid: "603f594995b97186a584a1fb5f4b5b6f612bc5deecf7430637ba872d98fedff4"
+  obrazek: "gbr0067.jpg"
 
 - id: GBR-0068
   tytul: "Super Mario Land 2: 6 Golden Coins"
   region: EUROPA
   txid: "c77f35bdc901ab348add406a89458f67a90bf9071caa85fbaa48d7ea815d8326"
+  obrazek: "gbr0068.jpg"
 
 - id: GBR-0069
   tytul: "Bamse"
   region: EUROPA
   txid: "e522c3324550fe8471d14a45ac9be663ae9db4a4f2f2c9d91f675179815be810"
+  obrazek: "gbr0069.jpg"
 
 - id: GBR-0070
   tytul: "Taito Chase H.Q."
   region: JP
   txid: "84872935d8f89fc556cf04844d044a652b1e9ac94dd7e837cd3976bdd63ac023"
+  obrazek: "gbr0070.jpg"
 
 - id: GBR-0071
   tytul: "Megalit"
   region: EUROPA
   txid: "6ae56031d4846e31e86d9e1ec5ad05fbe0b93e040dc33966816f29a780704b32"
+  obrazek: "gbr0071.jpg"
 
 - id: GBR-0072
   tytul: "Quarth"
   region: JP
   txid: "b9d1b194cdcbd3ccdb1c133a0282bcb64946c93f7a7844653e99ef695fdb63eb"
+  obrazek: "gbr0072.jpg"
 
 - id: GBR-0073
   tytul: "Revenge of the 'Gator"
