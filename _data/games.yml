@@ -505,11 +505,16 @@
   region: EUROPA
   txid: "a5669eb70644de1c1a8cc31edb6521d1cf233da5a2ecde689144e6bd898395b0"
   obrazek: "gbr0082.jpg"
-  nowy: true
 
 - id: GBR-0083
   tytul: "Captain Tsubasa VS"
   region: JP
   txid: "e24b2f09ee2e2b34e4b409dfee364a781dc9af0586db97bd2b6a51c3dafd997a"
   obrazek: "gbr0083.jpg"
+
+- id: GBR-0084
+  tytul: "Captain Tsubasa VS"
+  region: JP
+  txid: "e4948140aee6d72876c52886bfc360bc9be9b077c4edbb9e51aa5faecec46475"
+  obrazek: "gbr0084.jpg"
   nowy: true
