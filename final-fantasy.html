@@ -6,14 +6,12 @@ description: "Kolekcja gier z serii Final Fantasy, zweryfikowana w blockchain BS
 <div id="output" class="output">
     <section class="box gb-info">
         <b>⚔️ KOLEKCJA FINAL FANTASY</b>
-        <br><br>
-
-        <pre style="color:lime;">
-        ==========================================
-           SERIA: FINAL FANTASY
-           TRYB: ARCHIWUM KOLEKCJI
-        ==========================================
-        </pre>
+        <div class="sys-info">
+            <div class="sys-info-title">◆ INFO SYSTEMU ◆</div>
+            <div class="sys-info-row"><span class="label">SYSTEM</span><span class="value">PSX / PS2 / PS4 / PS5 / PC</span></div>
+            <div class="sys-info-row"><span class="label">TRYB</span><span class="value">ARCHIWUM KOLEKCJI</span></div>
+            <div class="sys-info-row"><span class="label">AKTUALIZACJA</span><span class="value">2026-09-04</span></div>
+        </div>
 
         <div class="ff-grid">
             {% for gra in site.data.final_fantasy %}
