@@ -30,76 +30,76 @@
   obrazek: "ff7pc.jpg"
 
 - id: FF-0007
-  tytul: "Final Fantasy VII Advent Children"
-  region: EUROPA
-  obrazek: "ff7ac.jpg"
-
-- id: FF-0008
-  tytul: "Final Fantasy VII Dirge of Cerberus"
-  region: JP
-  obrazek: "ff7doc.jpg"
-
-- id: FF-0009
-  tytul: "Final Fantasy VII Reunion Crisis Core"
-  region: EUROPA
-  obrazek: "ff7cc.jpg"
-
-- id: FF-0010
-  tytul: "Final Fantasy VII Remake"
-  region: EUROPA
-  obrazek: "ff7rem.jpg"
-
-- id: FF-0011
-  tytul: "Final Fantasy VII Remake Intergrade & Rebirth"
-  region: EUROPA
-  obrazek: "ff7reb.jpg"
-
-- id: FF-0012
-  tytul: "Final Fantasy VII Steelbook"
-  region: EUROPA
-  obrazek: "ff7rebst.jpg"
-
-- id: FF-0013
-  tytul: "Final Fantasy VII Puzzle"
-  region: EUROPA
-  obrazek: "ff7js.jpg"
-
-- id: FF-0014
-  tytul: "Final Fantasy VII Puzzle"
-  region: EUROPA
-  obrazek: "ff7jm.jpg"
-
-- id: FF-0015
-  tytul: "Final Fantasy VII Puzzle"
-  region: EUROPA
-  obrazek: "ff7jcc.jpg"
-
-- id: FF-0016
   tytul: "Final Fantasy VIII"
   region: EUROPA
   obrazek: "ff8.jpg"
 
-- id: FF-0017
+- id: FF-0008
   tytul: "Final Fantasy VIII"
   region: JP
   obrazek: "ff8jp.jpg"
 
-- id: FF-0018
+- id: FF-0009
   tytul: "Final Fantasy IX"
   region: EUROPA
   obrazek: "ff9.jpg"
 
-- id: FF-0019
+- id: FF-0010
   tytul: "Final Fantasy IX"
   region: JP
   obrazek: "ff9jp.jpg"
+
+- id: FF-0011
+  tytul: "Final Fantasy VII Advent Children"
+  region: EUROPA
+  obrazek: "ff7ac.jpg"
+
+- id: FF-0012
+  tytul: "Final Fantasy VII Dirge of Cerberus"
+  region: JP
+  obrazek: "ff7doc.jpg"
+
+- id: FF-0013
+  tytul: "Final Fantasy VII Reunion Crisis Core"
+  region: EUROPA
+  obrazek: "ff7cc.jpg"
+
+- id: FF-0014
+  tytul: "Final Fantasy VII Remake"
+  region: EUROPA
+  obrazek: "ff7rem.jpg"
+
+- id: FF-0015
+  tytul: "Final Fantasy VII Remake Intergrade & Rebirth"
+  region: EUROPA
+  obrazek: "ff7reb.jpg"
+
+- id: FF-0016
+  tytul: "Final Fantasy VII Steelbook"
+  region: EUROPA
+  obrazek: "ff7rebst.jpg"
+
+- id: FF-0017
+  tytul: "Final Fantasy VII Puzzle"
+  region: EUROPA
+  obrazek: "ff7js.jpg"
+
+- id: FF-0018
+  tytul: "Final Fantasy VII Puzzle"
+  region: EUROPA
+  obrazek: "ff7jm.jpg"
+
+- id: FF-0019
+  tytul: "Final Fantasy VII Puzzle"
+  region: EUROPA
+  obrazek: "ff7jcc.jpg"
 
 - id: FF-0020
   tytul: "Final Fantasy Origin Stranger Of Paradise"
   region: EUROPA
   obrazek: "fforig.jpg"
 
-- id: FF-0020
+- id: FF-0021
   tytul: "Final Fantasy XIV Online"
   region: EUROPA
   obrazek: "ff14.jpg"
