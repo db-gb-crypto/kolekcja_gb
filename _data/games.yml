@@ -523,11 +523,16 @@
   region: EUROPA
   txid: "3312554ef1c76079239227fdb126a51ebc1fb111619534d2477e5ffee075f14a"
   obrazek: "gbr0085.jpg"
-  nowy: true
 
 - id: GBR-0086
   tytul: "Power Mission"
   region: USA
   txid: "4005d961fccdffe295f16f92d3948189d1142bda8194861637842c4f3988cc20"
   obrazek: "gbr0086.jpg"
+
+- id: GBR-0087
+  tytul: "Baseball"
+  region: JP
+  txid: "5c83869ac60312d35ddc5e46a335557201159066ab18dc07325fd51526ac5193"
+  obrazek: "gbr0087.jpg"
   nowy: true
