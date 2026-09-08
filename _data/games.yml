@@ -535,4 +535,10 @@
   region: JP
   txid: "5c83869ac60312d35ddc5e46a335557201159066ab18dc07325fd51526ac5193"
   obrazek: "gbr0087.jpg"
+
+- id: GBR-0087
+  tytul: "Castlevania: The Adventure"
+  region: EUROPA
+  txid: "868490bc41d152418a8496abceb9c1a7f71b42533c758abb89eebb0000f41515"
+  obrazek: "gbr0088.jpg"
   nowy: true
