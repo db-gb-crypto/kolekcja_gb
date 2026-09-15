@@ -565,4 +565,11 @@
   txid: "39aa47ce8f6db86f1a481a8ce9021a11c7e586bfeb993a3836965b1f41bffb98"
   obrazek: "gbr0089.jpg"
   opis: "Gra zakupiona w Danii, na portalu Vinted od użytkownika juntaux."
+
+- id: GBR-0090
+  tytul: "Shōgi"
+  region: JP
+  txid: "88a1e3d6c3f74e17e0312cb0dbcd4a94fe4e4d5beed21ef6e772688282699e6e"
+  obrazek: "gbr0090.jpg"
+  opis: "Gra zakupiona w Niemczech, na portalu Vinted od użytkownika vns-games."
   nowy: true
