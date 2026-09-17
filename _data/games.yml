@@ -572,4 +572,11 @@
   txid: "88a1e3d6c3f74e17e0312cb0dbcd4a94fe4e4d5beed21ef6e772688282699e6e"
   obrazek: "gbr0090.jpg"
   opis: "Gra zakupiona w Niemczech, na portalu Vinted od użytkownika vns-games."
+
+- id: GBR-0091
+  tytul: "Pokemon Yellow Version"
+  region: EUROPA
+  txid: "0ae8d42be13c1390a4ed81f31fc7524fd2ac4f6a6ec0efe507dccbd472a4192b"
+  obrazek: "gbr0091.jpg"
+  opis: "Gra zakupiona w Polsce od Pana Wiktora z Bydgoszczy."
   nowy: true
