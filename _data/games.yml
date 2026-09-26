@@ -603,3 +603,11 @@
   obrazek: "gbr0094.jpg"
   opis: "Gra zakupiona w Polsce od Pana Wiktora z Bydgoszczy."
   nowy: true
+
+- id: GBR-0095
+  tytul: "Pokemon Gold Version"
+  region: EUROPA
+  txid: "8bd27fd5af67b539491402ff56e85f1a1521756381ba9f15a4a6cafab5fbade5"
+  obrazek: "gbr0095.jpg"
+  opis: "Gra zakupiona w Polsce od Pana Wiktora z Bydgoszczy."
+  nowy: true
