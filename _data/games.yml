@@ -579,4 +579,27 @@
   txid: "0ae8d42be13c1390a4ed81f31fc7524fd2ac4f6a6ec0efe507dccbd472a4192b"
   obrazek: "gbr0091.jpg"
   opis: "Gra zakupiona w Polsce od Pana Wiktora z Bydgoszczy."
+
+- id: GBR-0092
+  tytul: "Pokemon Blue Version"
+  region: EUROPA
+  txid: "73de4f8855469c7b69e7b7e4fb7a08d339c069b9f49ec05d5229f2e2734a27c3"
+  obrazek: "gbr0092.jpg"
+  opis: "Gra zakupiona w Polsce od Pana Wiktora z Bydgoszczy."
+  nowy: true
+
+- id: GBR-0093
+  tytul: "Pokemon Silver Version"
+  region: EUROPA
+  txid: "f61a6dc0a74a9a508dd95bc3a7544b0b193fc3d69ca917876e538082ad93ef64"
+  obrazek: "gbr0093.jpg"
+  opis: "Gra zakupiona w Polsce od Pana Wiktora z Bydgoszczy."
+  nowy: true
+
+- id: GBR-0094
+  tytul: "Pokemon Red Version"
+  region: EUROPA
+  txid: "55d1986b4026ec7be2addd721f245c7a1f52d1644e276c5dd89891c3e9e8a438"
+  obrazek: "gbr0094.jpg"
+  opis: "Gra zakupiona w Polsce od Pana Wiktora z Bydgoszczy."
   nowy: true
