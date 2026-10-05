@@ -586,7 +586,6 @@
   txid: "73de4f8855469c7b69e7b7e4fb7a08d339c069b9f49ec05d5229f2e2734a27c3"
   obrazek: "gbr0092.jpg"
   opis: "Gra zakupiona w Polsce od Pana Wiktora z Bydgoszczy."
-  nowy: true
 
 - id: GBR-0093
   tytul: "Pokemon Silver Version"
@@ -594,7 +593,6 @@
   txid: "f61a6dc0a74a9a508dd95bc3a7544b0b193fc3d69ca917876e538082ad93ef64"
   obrazek: "gbr0093.jpg"
   opis: "Gra zakupiona w Polsce od Pana Wiktora z Bydgoszczy."
-  nowy: true
 
 - id: GBR-0094
   tytul: "Pokemon Red Version"
@@ -602,7 +600,6 @@
   txid: "55d1986b4026ec7be2addd721f245c7a1f52d1644e276c5dd89891c3e9e8a438"
   obrazek: "gbr0094.jpg"
   opis: "Gra zakupiona w Polsce od Pana Wiktora z Bydgoszczy."
-  nowy: true
 
 - id: GBR-0095
   tytul: "Pokemon Gold Version"
@@ -610,4 +607,11 @@
   txid: "8bd27fd5af67b539491402ff56e85f1a1521756381ba9f15a4a6cafab5fbade5"
   obrazek: "gbr0095.jpg"
   opis: "Gra zakupiona w Polsce od Pana Wiktora z Bydgoszczy."
+
+- id: GBR-0096
+  tytul: "Wave Race"
+  region: EUROPA
+  txid: "bf9891af785f2a02e56280c4207aa047c74cda67c2d758e59dec860eee245302"
+  obrazek: "gbr0096.jpg"
+  opis: "Gra zakupiona w Polsce na portalu olx od Pana Andrzeja."
   nowy: true
