@@ -615,3 +615,11 @@
   obrazek: "gbr0096.jpg"
   opis: "Gra zakupiona w Polsce na portalu olx od Pana Andrzeja."
   nowy: true
+
+- id: GBR-0097
+  tytul: "Kwirk: He's A-Maze-Ing!"
+  region: EUROPA
+  txid: "0fdd96d7b41539e8e2be6758e6c779bb269f4bd719d614921b3554aa9fc9e8c4"
+  obrazek: "gbr0097.jpg"
+  opis: "Gra zakupiona na portalu Vinted."
+  nowy: true
