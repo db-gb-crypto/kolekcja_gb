@@ -118,3 +118,8 @@
   tytul: "Final Fantasy XIV Online"
   region: EUROPA
   obrazek: "ff14.jpg"
+
+- id: FF-0025
+  tytul: "Final Fantasy XV"
+  region: EUROPA
+  obrazek: "ff15.jpg"
