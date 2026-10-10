@@ -65,6 +65,108 @@ function extractGameData(parts){
 }
 
 
+// ===== DIAGRAM POWIĄZAŃ (SVG) =====
+function budujDiagram(d, txid){
+    const NS = "http://www.w3.org/2000/svg";
+    const W = 170, H = 38, COL = 205, GAP = 12, PAD = 10;
+
+    // 1. Drzewo powiązań (brakujące pola są pomijane)
+    const n = (l, v, kids) => ({ l, v: v == null ? "?" : String(v), kids: kids || [] });
+    const maybe = (l, v) => (v == null ? [] : [n(l, v)]);
+
+    const ob = d.obudowa || {};
+    const pcb = d.pcb || {};
+    const rom = pcb.rom, mbc = pcb.mbc;
+
+    const obudowa = n("OBUDOWA", ob.kod, [
+        ...maybe("WYTŁOCZENIE", ob.kod_wytloczenia),
+        ...maybe("PRZÓD", ob.kod_obudowy_przod),
+        ...maybe("TYŁ", ob.kod_obudowy_tyl),
+    ]);
+
+    const pcbNode = n("PŁYTKA PCB", pcb.kod_pcb, [
+        ...(rom ? [n("ROM", rom.rom_kod, [
+            ...maybe("PRODUCENT", rom.rom_producent),
+            ...maybe("DATA", rom.rom_data_int),
+            ...maybe("SERIAL", rom.rom_data_serial),
+        ])] : []),
+        ...(mbc ? [n("MBC", mbc.mbc_kod, [
+            ...maybe("DATA", mbc.mbc_data_int),
+            ...maybe("SERIAL", mbc.mbc_data_serial),
+        ])] : []),
+    ]);
+
+    const root = n("TXID", txid.slice(0, 8) + "…", [
+        n("NR KOLEKCJI", d.id, [
+            n("TYTUŁ", d.tytul, [obudowa, pcbNode]),
+        ]),
+    ]);
+
+    // 2. Układ: x = głębokość, y = liście po kolei, rodzic wyśrodkowany
+    let nextY = PAD, maxDepth = 0;
+    (function place(node, depth){
+        node.x = PAD + depth * COL;
+        maxDepth = Math.max(maxDepth, depth);
+        if(!node.kids.length){
+            node.y = nextY;
+            nextY += H + GAP;
+        }else{
+            node.kids.forEach(k => place(k, depth + 1));
+            node.y = (node.kids[0].y + node.kids[node.kids.length - 1].y) / 2;
+        }
+    })(root, 0);
+
+    const width = PAD * 2 + maxDepth * COL + W;
+    const height = nextY + PAD - GAP;
+
+    // 3. Rysowanie (textContent => bezpieczne dla XSS)
+    const svg = document.createElementNS(NS, "svg");
+    svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+    svg.setAttribute("width", width);
+    svg.setAttribute("height", height);
+    svg.style.fontFamily = "monospace";
+
+    const el = (tag, attrs, text) => {
+        const e = document.createElementNS(NS, tag);
+        for(const k in attrs) e.setAttribute(k, attrs[k]);
+        if(text != null) e.textContent = text;
+        svg.appendChild(e);
+        return e;
+    };
+
+    (function edges(node){
+        node.kids.forEach(k => {
+            const x1 = node.x + W, y1 = node.y + H / 2;
+            const x2 = k.x, y2 = k.y + H / 2, mx = (x1 + x2) / 2;
+            el("path", {
+                d: `M${x1},${y1} C${mx},${y1} ${mx},${y2} ${x2},${y2}`,
+                fill: "none", stroke: "#8bac0f", "stroke-width": 2
+            });
+            edges(k);
+        });
+    })(root);
+
+    const cut = (s, max) => (s.length > max ? s.slice(0, max - 1) + "…" : s);
+
+    (function nodes(node){
+        el("rect", { x: node.x, y: node.y, width: W, height: H, rx: 4,
+                     fill: "#0f380f", stroke: "#9bbc0f", "stroke-width": 2 });
+        el("text", { x: node.x + 8, y: node.y + 14, fill: "#8bac0f", "font-size": 10 }, node.l);
+        el("text", { x: node.x + 8, y: node.y + 29, fill: "#9bbc0f", "font-size": 12,
+                     "font-weight": "bold" }, cut(node.v, 22));
+        node.kids.forEach(nodes);
+    })(root);
+
+    const wrap = document.createElement("div");
+    wrap.className = "diagram-wrap";
+    wrap.style.cssText = "overflow-x:auto;margin-top:15px;";
+    const title = document.createElement("b");
+    title.textContent = "DIAGRAM POWIĄZAŃ";
+    wrap.appendChild(title);
+    wrap.appendChild(svg);
+    return wrap;
+}
+
 function sprawdzTx(){
 	document.getElementById("gifStatus").src = "assets/4SHX.gif";
 	document.getElementById("gifLabel").innerHTML = "⏳ ŁADOWANIE BLOKCHAIN...";
@@ -135,6 +237,7 @@ function sprawdzTx(){
 				Data wpisu do lokalnej bazy: ${escapeHTML(safe(found.data_wpisu))}<br>
 				Data utworzenia wpisu do blockchain: ${escapeHTML(safe(found.data_txid))}
 			`;
+			out.appendChild(budujDiagram(found, txid));
 			document.getElementById("resetBtn").style.display = "inline-block";
         })
         .catch(e=>{
