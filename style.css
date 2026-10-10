@@ -1266,3 +1266,13 @@ img { max-width: 100%; height: auto; }
     .output h3 { font-size: 12px; }
     .box.gb-info { font-size: 17px; }
 }
+
+.dziennik-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border: 3px solid var(--gb-green-2);
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(139,172,15,0.3);
+}

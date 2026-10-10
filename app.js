@@ -122,8 +122,11 @@ function budujDiagram(d, txid){
     // 3. Rysowanie (textContent => bezpieczne dla XSS)
     const svg = document.createElementNS(NS, "svg");
     svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
-    svg.setAttribute("width", width);
-    svg.setAttribute("height", height);
+    svg.style.display = "block";
+    svg.style.width = "100%";            // dopasuj do szerokości ekranu
+    svg.style.maxWidth = width + "px";   // ale nie powiększaj ponad oryginał
+    svg.style.minWidth = "640px";        // poniżej tego napisy byłyby nieczytelne
+    svg.style.height = "auto";           // wysokość liczy się z proporcji viewBox
     svg.style.fontFamily = "monospace";
 
     const el = (tag, attrs, text) => {
