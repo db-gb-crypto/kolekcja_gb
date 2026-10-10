@@ -1222,3 +1222,47 @@ button:active {
     max-height: 100%;
     overflow-y: auto;
 }
+
+/* ===== RESPONSYWNOŚĆ ===== */
+
+/* ważne: pozwala kolumnie środkowej się zwężać (bez tego długi TXID ją rozpycha) */
+.retro-layout > * { min-width: 0; }
+
+.big-banner,
+.footer { grid-column: 1 / -1; }
+
+/* pole i przycisk nie wystają poza ramkę */
+input { box-sizing: border-box; width: 100%; }
+button { max-width: 100%; }
+
+/* długie ciągi znaków (TXID, adres BSV) się łamią */
+.output, .table td, .txid { overflow-wrap: anywhere; }
+
+img { max-width: 100%; height: auto; }
+
+/* TABLET: sidebary przechodzą pod treść, obok siebie */
+@media (max-width: 1000px) {
+    .retro-layout {
+        grid-template-columns: 1fr 1fr;
+    }
+    .container {
+        grid-column: 1 / -1;
+        order: -1;            /* treść główna na górze */
+    }
+    .big-banner { order: -2; }
+}
+
+/* TELEFON: wszystko w jednej kolumnie */
+@media (max-width: 650px) {
+    body { font-size: 16px; }
+
+    .retro-layout {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    .big-banner { font-size: 20px; }
+    .container { padding: 30px 12px 40px; }
+    .output { font-size: 18px; padding: 10px; border-width: 6px; }
+    .output h3 { font-size: 12px; }
+    .box.gb-info { font-size: 17px; }
+}
