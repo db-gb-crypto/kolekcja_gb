@@ -140,7 +140,7 @@ function budujDiagram(d, txid){
             const x2 = k.x, y2 = k.y + H / 2, mx = (x1 + x2) / 2;
             el("path", {
                 d: `M${x1},${y1} C${mx},${y1} ${mx},${y2} ${x2},${y2}`,
-                fill: "none", stroke: "#8bac0f", "stroke-width": 2
+                fill: "none", stroke: "#0f380f", "stroke-width": 2
             });
             edges(k);
         });
