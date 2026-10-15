@@ -189,7 +189,10 @@ function dodajModel3D(id){
             mv.setAttribute("src", url);
             mv.setAttribute("alt", "Model 3D gry " + id);
             mv.setAttribute("camera-controls", "");
+            mv.setAttribute("disable-zoom", "");
             mv.setAttribute("auto-rotate", "");
+            mv.setAttribute("auto-rotate-delay", "0");
+            mv.setAttribute("rotation-per-second", "-30deg");
             mv.setAttribute("shadow-intensity", "1");
             mv.setAttribute("touch-action", "pan-y");  // na telefonie pozwala przewijać stronę
             slot.appendChild(mv);
