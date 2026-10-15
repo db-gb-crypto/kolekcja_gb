@@ -188,7 +188,7 @@ function dodajModel3D(id){
             mv.className = "gb-model";
             mv.setAttribute("src", url);
             mv.setAttribute("alt", "Model 3D gry " + id);
-            mv.setAttribute("orientation", "90deg 0deg 45deg");
+            mv.setAttribute("orientation", "90deg 90deg 45deg");
             mv.setAttribute("camera-controls", "");
             mv.setAttribute("disable-zoom", "");
             mv.setAttribute("auto-rotate", "");
