@@ -170,6 +170,33 @@ function budujDiagram(d, txid){
     return wrap;
 }
 
+// ===== MODEL 3D (.glb) =====
+function dodajModel3D(id){
+    const slot = document.getElementById("modelSlot");
+    if(!slot) return;
+
+    const m = String(id ?? "").match(/(\d+)\s*$/);   // "GBR-0042" -> "0042"
+    if(!m) return;
+
+    const url = `assets/modele/glb${m[1]}.glb`;
+
+    // sprawdź, czy plik istnieje, żeby nie pokazywać pustego okna
+    fetch(url, { method: "HEAD" })
+        .then(r => {
+            if(!r.ok) return;
+            const mv = document.createElement("model-viewer");
+            mv.className = "gb-model";
+            mv.setAttribute("src", url);
+            mv.setAttribute("alt", "Model 3D gry " + id);
+            mv.setAttribute("camera-controls", "");
+            mv.setAttribute("auto-rotate", "");
+            mv.setAttribute("shadow-intensity", "1");
+            mv.setAttribute("touch-action", "pan-y");  // na telefonie pozwala przewijać stronę
+            slot.appendChild(mv);
+        })
+        .catch(() => {});
+}
+
 function sprawdzTx(){
 	document.getElementById("gifStatus").src = "assets/4SHX.gif";
 	document.getElementById("gifLabel").innerHTML = "⏳ ŁADOWANIE BLOKCHAIN...";
@@ -211,6 +238,7 @@ function sprawdzTx(){
             out.innerHTML=`
 
 				<h3>${escapeHTML(safe(found.tytul))}</h3><br>
+				<div id="modelSlot"></div>
 				<b>NUMER KOLEKCJI (ID): ${escapeHTML(safe(found.id))}</b><br>
 				TEN EGZEMPLARZ ZOSTAŁ WYDANY W  ${escapeHTML(safe(found.rok_wydania))} ROKU!<br><br>
 
@@ -240,6 +268,7 @@ function sprawdzTx(){
 				Data wpisu do lokalnej bazy: ${escapeHTML(safe(found.data_wpisu))}<br>
 				Data utworzenia wpisu do blockchain: ${escapeHTML(safe(found.data_txid))}
 			`;
+			dodajModel3D(found.id);
 			out.appendChild(budujDiagram(found, txid));
 			document.getElementById("resetBtn").style.display = "inline-block";
         })
