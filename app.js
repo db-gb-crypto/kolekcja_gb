@@ -416,3 +416,27 @@ function filterGames(){
         card.style.display = tytul.includes(query) ? "" : "none";
     });
 }
+
+// ===== LENIWE ŁADOWANIE OKŁADEK =====
+function lazyCovers(){
+    const covers = document.querySelectorAll(".game-cover[data-bg]");
+    const load = c => { c.style.backgroundImage = `url("${c.dataset.bg}")`; };
+
+    if(!("IntersectionObserver" in window)){
+        covers.forEach(load);      // stare przeglądarki: ładuj wszystko
+        return;
+    }
+
+    const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if(e.isIntersecting){
+                load(e.target);
+                obs.unobserve(e.target);
+            }
+        });
+    }, { rootMargin: "300px" });   // zaczyna ładować 300 px przed wejściem w ekran
+
+    covers.forEach(c => obs.observe(c));
+}
+
+lazyCovers();

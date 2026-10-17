@@ -19,7 +19,7 @@ layout: default
         <div class="game-card {% unless gra.obrazek %}no-cover{% endunless %}" data-tytul="{{ gra.tytul | downcase }}"
              {% if gra.opis %}onclick="toggleGameDesc(this)"{% endif %}>
 
-            <div class="game-cover" {% if gra.obrazek %}style="background-image:url('{{ '/assets/gry/' | relative_url }}{{ gra.obrazek }}');"{% endif %}></div>
+            <div class="game-cover" {% if gra.obrazek %}data-bg="{{ '/assets/gry/' | relative_url }}{{ gra.obrazek }}"{% endif %}></div>
 
             <span class="game-id">{{ gra.id }}</span>
             <span class="game-region"><span class="fi fi-{{ site.data.flags[gra.region] | default: 'xx' }}"></span></span>
