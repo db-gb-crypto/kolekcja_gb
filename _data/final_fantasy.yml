@@ -31,12 +31,12 @@
 
 - id: FF-0007
   tytul: "Final Fantasy VII"
-  region: JP
+  region: JAPONIA
   obrazek: "ff7jp.jpg"
 
 - id: FF-0008
   tytul: "Final Fantasy VII International"
-  region: JP
+  region: JAPONIA
   obrazek: "ff7in.jpg"
 
 - id: FF-0009
@@ -51,7 +51,7 @@
 
 - id: FF-0011
   tytul: "Final Fantasy VIII"
-  region: JP
+  region: JAPONIA
   obrazek: "ff8jp.jpg"
 
 - id: FF-0012
@@ -61,7 +61,7 @@
 
 - id: FF-0013
   tytul: "Final Fantasy IX"
-  region: JP
+  region: JAPONIA
   obrazek: "ff9jp.jpg"
 
 - id: FF-0014
@@ -71,7 +71,7 @@
 
 - id: FF-0015
   tytul: "Final Fantasy VII Dirge of Cerberus"
-  region: JP
+  region: JAPONIA
   obrazek: "ff7doc.jpg"
 
 - id: FF-0016
