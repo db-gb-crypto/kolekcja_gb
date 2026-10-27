@@ -628,7 +628,6 @@
   txid: "bcd59b5a5b4f4ebf76b5542b6f3210cc69574fd5de6ffa1c1c606f0fc1b18890"
   obrazek: "gbr0098.jpg"
   opis: "Gra zakupiona w Holandii, na portalu ebay od użytkownika jeffrey-gb-collector. Zawsze dawał mi zwrot kilku Euro jak brałem kilka gier."
-  nowy: true
 
 - id: GBR-0099
   tytul: "Boomer's Adventure in ASMIK World"
@@ -636,4 +635,11 @@
   txid: "4c317276da9c19fb700457460ff3c4261d692398858b601fea957d0bd3ad9a28"
   obrazek: "gbr0099.jpg"
   opis: "Gra zakupiona w Holandii, na portalu ebay od użytkownika jeffrey-gb-collector. Zawsze dawał mi zwrot kilku Euro jak brałem kilka gier."
+
+- id: GBR-0097
+  tytul: "Pachio-kun 3"
+  region: JP
+  txid: "2bddf1a1e2e6651acccad23fd6ba14ef92bfd076071cdf718ad6b12c553b5529"
+  obrazek: "gbr0100.jpg"
+  opis: "Gra zakupiona na portalu Vinted."
   nowy: true
