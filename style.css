@@ -1290,3 +1290,50 @@ model-viewer.gb-model {
 @media (max-width: 650px) {
     model-viewer.gb-model { height: 240px; }
 }
+
+
+/* ===== SZYBKIE PRZEJŚCIE DO WYSZUKIWARKI TXID (przycisk SPRAWDŹ na kartach i komunikat po wklejeniu) ===== */
+.txid-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+}
+
+.txid-check {
+    display: inline-block;
+    padding: 0 5px;
+    background: var(--gb-green-4);
+    color: var(--gb-green-1);
+    border: 1px solid var(--gb-green-2);
+    font-family: "VT323", "Courier New", monospace;
+    font-size: 13px;
+    line-height: 1.2;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.txid-check:hover {
+    background: var(--gb-green-3);
+    color: var(--gb-green-1);
+}
+
+.txid-toast {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    z-index: 9999;
+    max-width: 92vw;
+    padding: 10px 14px;
+    background: var(--gb-green-1);
+    color: var(--gb-green-4);
+    border: 3px solid var(--gb-green-4);
+    box-shadow: 0 0 12px var(--gb-green-3);
+    font-family: "VT323", "Courier New", monospace;
+    font-size: 20px;
+}
+
+.txid-toast button {
+    margin-left: 8px;
+}

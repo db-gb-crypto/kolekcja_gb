@@ -440,3 +440,83 @@ function lazyCovers(){
 }
 
 lazyCovers();
+
+// ===== SZYBKIE PRZEJŚCIE DO WYSZUKIWARKI TXID =====
+const TXID_RE = /^[0-9a-fA-F]{64}$/;
+
+// 1) Wejście z linkiem index.html?txid=... => wypełnij pole i sprawdź
+function autoSprawdzZLinku(){
+    const pole = document.getElementById("txid");
+    if(!pole) return;                       // tylko strona z wyszukiwarką
+    const t = (new URLSearchParams(location.search).get("txid") || "").trim();
+    if(!TXID_RE.test(t)) return;
+    pole.value = t;
+    sprawdzTx();
+}
+
+// 2) Przycisk "SPRAWDŹ ▸" obok TXID na kartach gier (baza.html)
+function dodajPrzyciskiSprawdz(){
+    document.querySelectorAll(".game-card .txid[data-full]").forEach(el => {
+        const t = (el.getAttribute("data-full") || "").trim();
+        if(!TXID_RE.test(t)) return;
+
+        const rzad = document.createElement("div");
+        rzad.className = "txid-row";
+        el.parentNode.insertBefore(rzad, el);
+        rzad.appendChild(el);                 // TXID zostaje (z copyTX), przycisk obok
+
+        const a = document.createElement("a");
+        a.className = "txid-check";
+        a.href = "index.html?txid=" + t;
+        a.textContent = "SPRAWDŹ ▸";
+        a.title = "Otwórz w wyszukiwarce TXID";
+        a.addEventListener("click", ev => ev.stopPropagation());  // nie odwracaj karty gry
+        rzad.appendChild(a);
+    });
+}
+
+// 3) Inteligentne wklejanie: Ctrl+V poza polem tekstowym z 64 znakami hex
+function pokazToastTxid(t){
+    const stary = document.getElementById("txidToast");
+    if(stary) stary.remove();
+
+    const box = document.createElement("div");
+    box.id = "txidToast";
+    box.className = "txid-toast";
+
+    const txt = document.createElement("span");
+    txt.textContent = "WYKRYTO TXID: " + t.slice(0, 8) + "…";
+
+    const go = document.createElement("button");
+    go.type = "button";
+    go.textContent = "SPRAWDŹ ▸";
+    go.addEventListener("click", () => {
+        const pole = document.getElementById("txid");
+        if(pole){
+            pole.value = t;
+            box.remove();
+            sprawdzTx();
+        }else{
+            location.href = "index.html?txid=" + t;
+        }
+    });
+
+    const close = document.createElement("button");
+    close.type = "button";
+    close.textContent = "✕";
+    close.addEventListener("click", () => box.remove());
+
+    box.append(txt, go, close);
+    document.body.appendChild(box);
+    setTimeout(() => box.remove(), 8000);
+}
+
+document.addEventListener("paste", function(e){
+    const cel = e.target;
+    if(cel && (/^(INPUT|TEXTAREA)$/.test(cel.tagName) || cel.isContentEditable)) return;
+    const tekst = ((e.clipboardData && e.clipboardData.getData("text")) || "").trim();
+    if(TXID_RE.test(tekst)) pokazToastTxid(tekst);
+});
+
+autoSprawdzZLinku();
+dodajPrzyciskiSprawdz();
