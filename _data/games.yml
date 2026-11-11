@@ -642,4 +642,11 @@
   txid: "2bddf1a1e2e6651acccad23fd6ba14ef92bfd076071cdf718ad6b12c553b5529"
   obrazek: "gbr0100.jpg"
   opis: "Gra zakupiona na portalu Vinted."
+
+- id: GBR-0101
+  tytul: "Kaisen Game - Navyblue"
+  region: JP
+  txid: "528034ec175b55fed370fd98e9f406b63cf9ea20afa9a50ba8117de61c9fbacb"
+  obrazek: "gbr0101.jpg"
+  opis: "Gra zakupiona na portalu olx."
   nowy: true
