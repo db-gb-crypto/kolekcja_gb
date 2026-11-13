@@ -624,14 +624,14 @@
 
 - id: GBR-0098
   tytul: "Q Billion"
-  region: EUROPA
+  region: USA
   txid: "bcd59b5a5b4f4ebf76b5542b6f3210cc69574fd5de6ffa1c1c606f0fc1b18890"
   obrazek: "gbr0098.jpg"
   opis: "Gra zakupiona w Holandii, na portalu ebay od użytkownika jeffrey-gb-collector. Zawsze dawał mi zwrot kilku Euro jak brałem kilka gier."
 
 - id: GBR-0099
   tytul: "Boomer's Adventure in ASMIK World"
-  region: EUROPA
+  region: USA
   txid: "4c317276da9c19fb700457460ff3c4261d692398858b601fea957d0bd3ad9a28"
   obrazek: "gbr0099.jpg"
   opis: "Gra zakupiona w Holandii, na portalu ebay od użytkownika jeffrey-gb-collector. Zawsze dawał mi zwrot kilku Euro jak brałem kilka gier."
@@ -649,4 +649,11 @@
   txid: "528034ec175b55fed370fd98e9f406b63cf9ea20afa9a50ba8117de61c9fbacb"
   obrazek: "gbr0101.jpg"
   opis: "Gra zakupiona na portalu olx."
+
+- id: GBR-0102
+  tytul: "Hong Kong"
+  region: JP
+  txid: "99378a748b41717868703333744eacd5fd641c9d10076df03db1696f0bdda331"
+  obrazek: "gbr0102.jpg"
+  opis: "Gra zakupiona na portalu Vinted."
   nowy: true
