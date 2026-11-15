@@ -657,3 +657,11 @@
   obrazek: "gbr0102.jpg"
   opis: "Gra zakupiona na portalu Vinted."
   nowy: true
+
+- id: GBR-0103
+  tytul: "Sanrio Uranai Party"
+  region: JP
+  txid: "ac0cb3f333d8b294e89d691c7163dcdeff085cd7c643d8093410878bd710d7e0"
+  obrazek: "gbr0103.jpg"
+  opis: "Gra zakupiona na portalu Vinted."
+  nowy: true
