@@ -663,12 +663,19 @@
   txid: "ac0cb3f333d8b294e89d691c7163dcdeff085cd7c643d8093410878bd710d7e0"
   obrazek: "gbr0103.jpg"
   opis: "Gra zakupiona na portalu Vinted."
-  nowy: true
 
 - id: GBR-0104
   tytul: "Trump Collection GB"
   region: JP
   txid: "54364c07e556f4f2ae70299747e65aa36b0b97babe1c8c4d8aea7fa3935b73bb"
   obrazek: "gbr0104.jpg"
+  opis: "Gra zakupiona na portalu Vinted."
+  nowy: true
+
+- id: GBR-0105
+  tytul: "Purikura Pocket 2 - Kareshi Kaizo Daisakusen"
+  region: JP
+  txid: "110bd4cdc5406ffd32e762a3e99ec3ebbcdcd1703fcffe756fe5cf4147122fe2"
+  obrazek: "gbr0105.jpg"
   opis: "Gra zakupiona na portalu Vinted."
   nowy: true
