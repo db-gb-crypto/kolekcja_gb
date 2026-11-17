@@ -670,12 +670,18 @@
   txid: "54364c07e556f4f2ae70299747e65aa36b0b97babe1c8c4d8aea7fa3935b73bb"
   obrazek: "gbr0104.jpg"
   opis: "Gra zakupiona na portalu Vinted."
-  nowy: true
 
 - id: GBR-0105
   tytul: "Purikura Pocket 2 - Kareshi Kaizo Daisakusen"
   region: JP
   txid: "110bd4cdc5406ffd32e762a3e99ec3ebbcdcd1703fcffe756fe5cf4147122fe2"
   obrazek: "gbr0105.jpg"
+  opis: "Gra zakupiona na portalu Vinted."
+
+- id: GBR-0106
+  tytul: "Hiryu no Ken Gaiden"
+  region: JP
+  txid: "e80422b4474a3d8b90c52ea39dc1d4eaaa79154c9c7a1a025d7797257690c2d0"
+  obrazek: "gbr0106.jpg"
   opis: "Gra zakupiona na portalu Vinted."
   nowy: true
