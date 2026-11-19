@@ -684,4 +684,11 @@
   txid: "e80422b4474a3d8b90c52ea39dc1d4eaaa79154c9c7a1a025d7797257690c2d0"
   obrazek: "gbr0106.jpg"
   opis: "Gra zakupiona na portalu Vinted."
+
+- id: GBR-0107
+  tytul: "Momotaro Dentetsu Jr.: Zenkoku Ramen Meguri no Maki"
+  region: JP
+  txid: "deece8a25b6cc8fb2027e7650c74c2ef7a47454a7f270e3ef4a476ecd3c99d21"
+  obrazek: "gbr0107.jpg"
+  opis: "Gra zakupiona na portalu Vinted."
   nowy: true
