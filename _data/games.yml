@@ -691,12 +691,18 @@
   txid: "deece8a25b6cc8fb2027e7650c74c2ef7a47454a7f270e3ef4a476ecd3c99d21"
   obrazek: "gbr0107.jpg"
   opis: "Gra zakupiona na portalu Vinted."
-  nowy: true
 
 - id: GBR-0108
   tytul: "Chibi Maruko-chan: Okozukai Daisakusen!"
   region: JP
   txid: "213105d34ae5cc2e9a9014fb6fd6e023122b83fd237945e2eebbe3f1e131e20f"
   obrazek: "gbr0108.jpg"
+  opis: "Gra zakupiona na portalu Vinted."
+
+- id: GBR-0109
+  tytul: "Super Momotarou Dentetsu"
+  region: JP
+  txid: "48e50513847824f2268d205189dc04cb0e0b3e690d83bd02d0ccf59262a3f50b"
+  obrazek: "gbr0109.jpg"
   opis: "Gra zakupiona na portalu Vinted."
   nowy: true
