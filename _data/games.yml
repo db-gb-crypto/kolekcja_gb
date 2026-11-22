@@ -712,12 +712,19 @@
   txid: "ba3915c70c33071100449256a846a144ede453bcd495ab0e899537b070cc854f"
   obrazek: "gbr0110.jpg"
   opis: "Gra zakupiona na portalu Vinted."
-  nowy: true
 
 - id: GBR-0111
   tytul: "Chibi Maruko-Chan 3: Mezase! Game Taishou"
   region: JP
   txid: "853313710ccef98e028db29129fb060764a46f09bb7ff65e14ac9df52380a830"
   obrazek: "gbr0111.jpg"
+  opis: "Gra zakupiona na portalu Vinted."
+  nowy: true
+
+- id: GBR-0112
+  tytul: "Konchu Hakase"
+  region: JP
+  txid: "37a2169d7ab713fe73b80cf5e07ada1575ad7da978cd2447c298cd97168918b4"
+  obrazek: "gbr0112.jpg"
   opis: "Gra zakupiona na portalu Vinted."
   nowy: true
