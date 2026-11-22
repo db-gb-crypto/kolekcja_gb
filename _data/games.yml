@@ -705,12 +705,19 @@
   txid: "48e50513847824f2268d205189dc04cb0e0b3e690d83bd02d0ccf59262a3f50b"
   obrazek: "gbr0109.jpg"
   opis: "Gra zakupiona na portalu Vinted."
-  nowy: true
 
 - id: GBR-0110
   tytul: "SD Gundam SD Sengokuden 2 - Tenka Toitsu Hen"
   region: JP
   txid: "ba3915c70c33071100449256a846a144ede453bcd495ab0e899537b070cc854f"
   obrazek: "gbr0110.jpg"
+  opis: "Gra zakupiona na portalu Vinted."
+  nowy: true
+
+- id: GBR-0111
+  tytul: "Chibi Maruko-Chan 3: Mezase! Game Taishou"
+  region: JP
+  txid: "853313710ccef98e028db29129fb060764a46f09bb7ff65e14ac9df52380a830"
+  obrazek: "gbr0111.jpg"
   opis: "Gra zakupiona na portalu Vinted."
   nowy: true
