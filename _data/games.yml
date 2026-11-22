@@ -735,3 +735,11 @@
   obrazek: "gbr0113.jpg"
   opis: "Gra zakupiona na portalu Vinted."
   nowy: true
+
+- id: GBR-0114
+  tytul: "Aoki Densetsu Shoot!"
+  region: JP
+  txid: "5fb87fe19f3ce385774b6cd107b3b0a952ab26ed082855304bd1164676afe18c"
+  obrazek: "gbr0114.jpg"
+  opis: "Gra zakupiona na portalu Vinted."
+  nowy: true
