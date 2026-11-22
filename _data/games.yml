@@ -719,12 +719,19 @@
   txid: "853313710ccef98e028db29129fb060764a46f09bb7ff65e14ac9df52380a830"
   obrazek: "gbr0111.jpg"
   opis: "Gra zakupiona na portalu Vinted."
-  nowy: true
 
 - id: GBR-0112
   tytul: "Konchu Hakase"
   region: JP
   txid: "37a2169d7ab713fe73b80cf5e07ada1575ad7da978cd2447c298cd97168918b4"
   obrazek: "gbr0112.jpg"
+  opis: "Gra zakupiona na portalu Vinted."
+  nowy: true
+
+- id: GBR-0113
+  tytul: "Pocket Densha"
+  region: JP
+  txid: "3bf4867a2930fb38b0254a4f3040caa398c3759ec846474edea2792962d3504a"
+  obrazek: "gbr0113.jpg"
   opis: "Gra zakupiona na portalu Vinted."
   nowy: true
