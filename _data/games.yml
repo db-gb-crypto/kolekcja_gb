@@ -726,7 +726,6 @@
   txid: "37a2169d7ab713fe73b80cf5e07ada1575ad7da978cd2447c298cd97168918b4"
   obrazek: "gbr0112.jpg"
   opis: "Gra zakupiona na portalu Vinted."
-  nowy: true
 
 - id: GBR-0113
   tytul: "Pocket Densha"
@@ -747,5 +746,13 @@
   region: JP
   txid: "0cb79cce9d809f6992011bca792862acc73130090fd63e5719a21ddb476fc149"
   obrazek: "gbr0115.jpg"
+  opis: "Gra zakupiona na portalu olx od Dawida."
+  nowy: true
+
+- id: GBR-0116
+  tytul: "America Oudan Ultra Quiz 2"
+  region: JP
+  txid: "bd1baa2d8160ea7bf9e32af8775541286bc928e07cc24ceee392c55500750565"
+  obrazek: "gbr0116.jpg"
   opis: "Gra zakupiona na portalu olx od Dawida."
   nowy: true
