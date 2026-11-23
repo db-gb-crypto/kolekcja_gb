@@ -734,7 +734,6 @@
   txid: "3bf4867a2930fb38b0254a4f3040caa398c3759ec846474edea2792962d3504a"
   obrazek: "gbr0113.jpg"
   opis: "Gra zakupiona na portalu Vinted."
-  nowy: true
 
 - id: GBR-0114
   tytul: "Aoki Densetsu Shoot!"
@@ -742,4 +741,11 @@
   txid: "5fb87fe19f3ce385774b6cd107b3b0a952ab26ed082855304bd1164676afe18c"
   obrazek: "gbr0114.jpg"
   opis: "Gra zakupiona na portalu Vinted."
+
+- id: GBR-0115
+  tytul: "America Oudan Ultra Quiz"
+  region: JP
+  txid: "0cb79cce9d809f6992011bca792862acc73130090fd63e5719a21ddb476fc149"
+  obrazek: "gbr0115.jpg"
+  opis: "Gra zakupiona na portalu olx od Dawida."
   nowy: true
