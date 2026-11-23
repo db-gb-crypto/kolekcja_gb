@@ -756,3 +756,11 @@
   obrazek: "gbr0116.jpg"
   opis: "Gra zakupiona na portalu olx od Dawida."
   nowy: true
+
+- id: GBR-0117
+  tytul: "Taikyoku Renju"
+  region: JP
+  txid: "630838ffd77d575e9900352834e3c68724927222303d6c485fc015ff36b98a35"
+  obrazek: "gbr0117.jpg"
+  opis: "Gra zakupiona na portalu olx od Dawida."
+  nowy: true
