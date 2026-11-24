@@ -777,3 +777,11 @@
   obrazek: "gbr0119.jpg"
   opis: "Gra zakupiona na portalu olx od Dawida."
   nowy: true
+
+- id: GBR-0120
+  tytul: "Pocket Mahjong"
+  region: JP
+  txid: "bd00e7b0a5703b586a62a023999ffd6c9f95fdec55f54f521cf399ddd04b482a"
+  obrazek: "gbr0120.jpg"
+  opis: "Gra zakupiona na portalu olx od Dawida."
+  nowy: true
