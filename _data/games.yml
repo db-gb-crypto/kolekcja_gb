@@ -769,3 +769,11 @@
   obrazek: "gbr0118.jpg"
   opis: "Gra zakupiona na portalu olx od Dawida."
   nowy: true
+
+- id: GBR-0119
+  tytul: "Ninku"
+  region: JP
+  txid: "91abe6015c7082ee5ccfa5015d1bc845420b3806dd1590e0373e94d7e4243d70"
+  obrazek: "gbr0119.jpg"
+  opis: "Gra zakupiona na portalu olx od Dawida."
+  nowy: true
