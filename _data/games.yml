@@ -747,7 +747,6 @@
   txid: "0cb79cce9d809f6992011bca792862acc73130090fd63e5719a21ddb476fc149"
   obrazek: "gbr0115.jpg"
   opis: "Gra zakupiona na portalu olx od Dawida."
-  nowy: true
 
 - id: GBR-0116
   tytul: "America Oudan Ultra Quiz 2"
@@ -755,12 +754,18 @@
   txid: "bd1baa2d8160ea7bf9e32af8775541286bc928e07cc24ceee392c55500750565"
   obrazek: "gbr0116.jpg"
   opis: "Gra zakupiona na portalu olx od Dawida."
-  nowy: true
 
 - id: GBR-0117
   tytul: "Taikyoku Renju"
   region: JP
   txid: "630838ffd77d575e9900352834e3c68724927222303d6c485fc015ff36b98a35"
   obrazek: "gbr0117.jpg"
+  opis: "Gra zakupiona na portalu olx od Dawida."
+
+- id: GBR-0118
+  tytul: "Bakuretsu Senshi Warrior"
+  region: JP
+  txid: "7333ebfcd66c65b1dbb077a2de1947042041fd4e0f55905bed14dee860c1b12d"
+  obrazek: "gbr0118.jpg"
   opis: "Gra zakupiona na portalu olx od Dawida."
   nowy: true
