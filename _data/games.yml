@@ -768,7 +768,6 @@
   txid: "7333ebfcd66c65b1dbb077a2de1947042041fd4e0f55905bed14dee860c1b12d"
   obrazek: "gbr0118.jpg"
   opis: "Gra zakupiona na portalu olx od Dawida."
-  nowy: true
 
 - id: GBR-0119
   tytul: "Ninku"
@@ -776,12 +775,25 @@
   txid: "91abe6015c7082ee5ccfa5015d1bc845420b3806dd1590e0373e94d7e4243d70"
   obrazek: "gbr0119.jpg"
   opis: "Gra zakupiona na portalu olx od Dawida."
-  nowy: true
 
 - id: GBR-0120
   tytul: "Pocket Mahjong"
   region: JP
   txid: "bd00e7b0a5703b586a62a023999ffd6c9f95fdec55f54f521cf399ddd04b482a"
   obrazek: "gbr0120.jpg"
+  opis: "Gra zakupiona na portalu olx od Dawida."
+
+- id: GBR-0121
+  tytul: "Family Jockey"
+  region: JP
+  txid: "5b0566f07f65d3490993e31229d5c56bb4ba22989ec7e5731daceb856fd6adbb"
+  obrazek: "gbr0121.jpg"
+  opis: "Gra zakupiona na portalu olx od Dawida."
+
+- id: GBR-0122
+  tytul: "Magical Taruruuto-kun"
+  region: JP
+  txid: "c04b91ad5eac11922e1e956221aff3741ab87a3270e8616b4756871a693a86a8"
+  obrazek: "gbr0122.jpg"
   opis: "Gra zakupiona na portalu olx od Dawida."
   nowy: true
