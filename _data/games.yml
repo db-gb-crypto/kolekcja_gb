@@ -796,4 +796,11 @@
   txid: "c04b91ad5eac11922e1e956221aff3741ab87a3270e8616b4756871a693a86a8"
   obrazek: "gbr0122.jpg"
   opis: "Gra zakupiona na portalu olx od Dawida."
+
+- id: GBR-0123
+  tytul: "Max"
+  region: EUROPA
+  txid: "796ade806093ec48757c9f81dbc46d4eaa4aafa4f7ecdea82137093739c84e79"
+  obrazek: "gbr0123.jpg"
+  opis: "Gra zakupiona na portalu olx od Andrzeja."
   nowy: true
